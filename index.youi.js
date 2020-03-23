@@ -5,10 +5,15 @@ import React, { Component } from "react";
 import { AppRegistry, Image, StyleSheet, Text, View } from "react-native";
 import { FormFactor } from "@youi/react-native-youi";
 
+import ProgrammingGuide from './ProgrammingGuide';
+
+const schedules = require('./schedules.json');
+
 export default class YiReactApp extends Component {
   render() {
     return (
       <View style={styles.mainContainer}>
+        <ProgrammingGuide schedules={schedules}/>
         <View style={styles.headerContainer}>
           <View
             style={styles.imageContainer}

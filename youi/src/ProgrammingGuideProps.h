@@ -12,46 +12,51 @@ namespace react
 
 typedef struct
 {
-    uint32_t channelNumber;
-    
-    std::string description;
-    std::string resourceId; // channel identifier
-    std::string callSign;
-    std::string format;
-    std::string name;
-
-    CYIUrl imageUrl;
-} ChannelProps;
-
-bool InitFromValue(ChannelProps &channel, const folly::dynamic &value);
-
-typedef struct
-{
     bool isRestartable;
 
-    uint32_t duration;
+    int64_t duration;
+
+    int64_t episodeNumber;
+    int64_t seasonNumber;
     
     std::vector<std::string> categories{};
     std::vector<std::string> genres{};
 
     std::string parentalRating;
+    std::string episodeTitle;
     std::string description;
     std::string resourceId; // content identifier
-    std::string channelId;
     std::string title;
 
     CYIDateTime startTime;
     CYIDateTime endTime;
 
-    CYIUrl imageUrl;
-} TimeslotProps;
+    std::vector<CYIUrl> imageUrls;
+} ScheduleProps;
 
-bool InitFromValue(TimeslotProps &timeslot, const folly::dynamic &value);
+bool InitFromValue(ScheduleProps &schedule, const folly::dynamic &value);
+
+typedef struct
+{
+    uint32_t channelNumber;
+    
+    std::string description;
+    std::string channelId;
+    std::string callSign;
+    std::string name;
+
+    CYIUrl imageUrl;
+    
+    bool isFavorite;
+    
+    std::vector<ScheduleProps> schedule;
+} ChannelProps;
+
+bool InitFromValue(ChannelProps &channel, const folly::dynamic &value);
 
 struct ProgrammingGuideProps : public PropTypes
 {
     std::vector<ChannelProps> channels;
-    std::vector<TimeslotProps> schedules;
 };
 
 } // namespace react

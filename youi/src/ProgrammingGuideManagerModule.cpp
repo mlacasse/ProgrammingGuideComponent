@@ -6,6 +6,8 @@
 #include <youireact/NativeModuleRegistry.h>
 #include <youireact/nodes/ReactComponent.h>
 
+#define LOG_TAG "ProgrammingGuideManagerModule"
+
 using namespace yi::react;
 
 YI_RN_INSTANTIATE_MODULE(ProgrammingGuideManagerModule, AbstractComponentManagerModule);
@@ -19,26 +21,21 @@ YI_RN_OVERRIDE_ConfigureCounterpart(ProgrammingGuideManagerModule);
 
 namespace
 {
-
-//std::vector<CYIString, ProgrammingGuideChannel> ValidateChannels(std::vector<ProgrammingGuideChannel> channels)
-//{
-//    
-//}
-
 }   // namespace
 
 folly::dynamic ProgrammingGuideManagerModule::GetNativeProps()
 {
     folly::dynamic superProps = IComponentManager::GetNativeProps();
-    folly::dynamic props = folly::dynamic::object("channels", "array")("schedules", "array");
+    folly::dynamic props = folly::dynamic::object("schedules", "array");
     return folly::dynamic::merge(superProps, props);
 }
 
 void ProgrammingGuideManagerModule::SetupProperties()
 {
-    IComponentManager::SetupProperties();
-    
-//    YI_RN_DEFINE_PROPERTY("channels", [](ShadowProgrammingGuideView &self, std::vector<ProgrammingGuideChannel> channels) {
+    IViewManager::SetupProperties();
+
+    YI_RN_DEFINE_PROPERTY("schedules", [](ShadowProgrammingGuideView &self, std::vector<ChannelProps> schedules) {
 //        self.GetSavedProps()->channels = ValidateChannels(channels);
-//    });
+    });
+
 }
