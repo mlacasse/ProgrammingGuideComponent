@@ -20,6 +20,7 @@ typedef struct
     int64_t seasonNumber;
     
     std::vector<std::string> categories{};
+    std::vector<std::string> imageUrls{};
     std::vector<std::string> genres{};
 
     std::string parentalRating;
@@ -30,8 +31,6 @@ typedef struct
 
     CYIDateTime startTime;
     CYIDateTime endTime;
-
-    std::vector<CYIUrl> imageUrls;
 } ScheduleProps;
 
 bool InitFromValue(ScheduleProps &schedule, const folly::dynamic &value);
@@ -39,13 +38,11 @@ bool InitFromValue(ScheduleProps &schedule, const folly::dynamic &value);
 typedef struct
 {
     uint32_t channelNumber;
-    
-    std::string description;
+
     std::string channelId;
     std::string callSign;
+    std::string imageUrl;
     std::string name;
-
-    CYIUrl imageUrl;
     
     bool isFavorite;
     

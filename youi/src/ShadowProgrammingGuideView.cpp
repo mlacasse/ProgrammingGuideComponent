@@ -1,6 +1,7 @@
 #include "ShadowProgrammingGuideView.h"
 
 #include <youireact/NativeModuleRegistry.h>
+#include <youireact/props/DirectEventTypes.h>
 
 using namespace yi::react;
 
@@ -13,6 +14,8 @@ YI_RN_REGISTER_VIEW_MODULE(ShadowProgrammingGuideView);
 ShadowProgrammingGuideView::ShadowProgrammingGuideView()
 {
     m_savedProps.reset(new ProgrammingGuideProps());
+    
+    SetDirectEvent(DirectEvents::onLayout, onLayout);
 }
 
 ShadowProgrammingGuideView::~ShadowProgrammingGuideView() = default;
@@ -47,12 +50,14 @@ folly::dynamic ShadowProgrammingGuideView::GetDefaultProps() const
     //Default Props
     folly::dynamic defaultProps = folly::dynamic::object;
 
+    defaultProps["schedules"] = folly::dynamic::array;
+
     return defaultProps;
 }
 
 void ShadowProgrammingGuideView::OnLayoutApplied()
 {
-    // DO SOMETHING
+    EmitDirectEvent(DirectEvents::onLayout);
 }
 
 void ShadowProgrammingGuideView::ApplyProps(folly::dynamic properties)

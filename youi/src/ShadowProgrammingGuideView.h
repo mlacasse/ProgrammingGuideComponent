@@ -33,6 +33,8 @@ private:
     virtual void OnLayoutApplied() final;
     virtual void ApplyProps(folly::dynamic properties) override;
 
+    YI_RN_EXPORT_DIRECT_EVENT(onLayout);
+
     YI_TYPE_BASES(ShadowProgrammingGuideView, ShadowView);
 };
 

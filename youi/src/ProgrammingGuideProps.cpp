@@ -16,9 +16,11 @@ bool yi::react::InitFromValue(ChannelProps &channel, const folly::dynamic &value
     ok = ok && InitFromMandatoryField(channel.isFavorite, value, "isFavorite");
     ok = ok && InitFromMandatoryField(channel.schedule, value, "contents");
 
-    if (value["channelLogo"].isObject() && value["channelLogo"]["imageUrl"].isString())
+    if (value["channelLogo"].isObject())
     {
-        channel.imageUrl = CYIUrl(value["channelLogo"]["imageUrl"].asString());
+        folly::dynamic channelLogo = value["channelLogo"];
+
+        ok = ok && InitFromOptionalField(channel.imageUrl, value, "imageUrl");
     }
 
     return ok;
@@ -52,32 +54,14 @@ bool yi::react::InitFromValue(ScheduleProps &timeslot, const folly::dynamic &val
         }
     }
 
-    auto it = value.find("genres"); // Optional
-    if (it != value.items().end() && it->second.type() == folly::dynamic::ARRAY)
-    {
-        for(auto &elem : it->second)
-        {
-            timeslot.genres.push_back(elem.asString());
-        }
-    }
-
-    it = value.find("categories");  // Optional
-    if (it != value.items().end() && it->second.type() == folly::dynamic::ARRAY)
-    {
-        for(auto &elem : it->second)
-        {
-            timeslot.categories.push_back(elem.asString());
-        }
-    }
+    ok = ok && InitFromOptionalField(timeslot.genres, value, "genres");
+    ok = ok && InitFromOptionalField(timeslot.categories, value, "categories");
 
     if (value["images"].isArray())  // Optional
     {
         for (auto &elem : value["images"])
         {
-            if (elem.isObject() && elem["imageUrl"].isString())
-            {
-                timeslot.imageUrls.push_back(CYIUrl(elem["imageUrl"].asString()));
-            }
+            ok = ok && InitFromOptionalField(timeslot.imageUrls, elem, "imageUrl");
         }
     }
 

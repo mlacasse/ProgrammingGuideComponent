@@ -5,6 +5,7 @@
 
 #include <youireact/NativeModuleRegistry.h>
 #include <youireact/nodes/ReactComponent.h>
+#include <youireact/props/DirectEventTypes.h>
 
 #define LOG_TAG "ProgrammingGuideManagerModule"
 
@@ -25,7 +26,7 @@ namespace
 
 folly::dynamic ProgrammingGuideManagerModule::GetNativeProps()
 {
-    folly::dynamic superProps = IComponentManager::GetNativeProps();
+    folly::dynamic superProps = IViewManager::GetNativeProps();
     folly::dynamic props = folly::dynamic::object("schedules", "array");
     return folly::dynamic::merge(superProps, props);
 }
@@ -34,8 +35,12 @@ void ProgrammingGuideManagerModule::SetupProperties()
 {
     IViewManager::SetupProperties();
 
-    YI_RN_DEFINE_PROPERTY("schedules", [](ShadowProgrammingGuideView &self, std::vector<ChannelProps> schedules) {
-//        self.GetSavedProps()->channels = ValidateChannels(channels);
+    YI_RN_DEFINE_PROPERTY("schedules", [](ShadowProgrammingGuideView &self, std::vector<ChannelProps> channels) {
+        
+        
+        
+        self.GetSavedProps()->channels = channels;
+        
+        
     });
-
 }
