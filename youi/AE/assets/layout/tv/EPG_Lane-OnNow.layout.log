@@ -1,0 +1,340 @@
+activecomp {
+  name: "EPG_Lane-OnNow"
+  width: 1701
+  height: 362
+  defaultcameradistance: 2362.5
+  layer {
+    name: "Scaler"
+    id: 3290
+    sourceid: 3382
+    transform {
+      anchorPoint {
+        x: 850.5
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 0.36
+        z: 1
+      }
+      position {
+        x: 850.5
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Gradient.png"
+    id: 3291
+    sourceid: 1874
+    transform {
+      anchorPoint {
+        x: 960
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 0.88229162
+        y: 1.01
+        z: 1
+      }
+      position {
+        x: 855
+        y: -1
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderLeft"
+    id: 3292
+    sourceid: 2637
+    transform {
+      anchorPoint {
+        x: 0.5
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 209.5
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "OnNow-Details-Slot"
+    id: 3293
+    sourceid: 3359
+    transform {
+      anchorPoint {
+        x: 745
+        y: 181
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 955
+        y: 181
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Channelslot-OnNow"
+    id: 3294
+    sourceid: 3587
+    transform {
+      anchorPoint {
+        x: 65
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 145
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Favouriteslot-OnNow"
+    id: 3295
+    sourceid: 3496
+    transform {
+      anchorPoint {
+        x: 40
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 39.975
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "clip"
+    value: "false"
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+  properties {
+    key: "time-interpolator"
+    value: "CYIInterpolateLinear"
+  }
+  childtemplates: "EPG_OnNow-Details-Slot"
+  childtemplates: "EPG_Channelslot-OnNow"
+  childtemplates: "EPG_Favouriteslot-OnNow"
+}
+sources {
+  uid: 3382
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352901697158813
+    blue: 0.85882401466369629
+  }
+  width: 1701
+  height: 362
+  copy_source: false
+}
+sources {
+  uid: 1874
+  srctype: AE_IMAGE_SRC
+  name: "Lane-Gradient.png"
+  width: 1920
+  height: 130
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
+sources {
+  uid: 2637
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 1
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 3359
+  srctype: AE_COMP_SRC
+  name: "EPG_OnNow-Details-Slot.layout"
+  width: 1490
+  height: 362
+  copy_source: true
+}
+sources {
+  uid: 3587
+  srctype: AE_COMP_SRC
+  name: "EPG_Channelslot-OnNow.layout"
+  width: 130
+  height: 362
+  copy_source: true
+}
+sources {
+  uid: 3496
+  srctype: AE_COMP_SRC
+  name: "EPG_Favouriteslot-OnNow.layout"
+  width: 80
+  height: 362
+  copy_source: true
+}

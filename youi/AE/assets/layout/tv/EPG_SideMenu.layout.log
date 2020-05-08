@@ -1,0 +1,305 @@
+activecomp {
+  name: "EPG_SideMenu"
+  width: 400
+  height: 1015
+  defaultcameradistance: 555.55554
+  layer {
+    name: "GreyBg"
+    id: 2439
+    sourceid: 2642
+    transform {
+      anchorPoint {
+        x: 200
+        y: 507.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 200
+        y: 507
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.7
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "SideMenu-FooterGroup"
+    id: 2440
+    sourceid: 2494
+    transform {
+      anchorPoint {
+        x: 200
+        y: 104.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 202
+        y: 910.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "margin-top"
+      value: "806"
+    }
+    properties {
+      key: "item-gravity"
+      value: "bottom"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "SideMenu-JumpList"
+    id: 2441
+    sourceid: 2521
+    transform {
+      anchorPoint {
+        x: 200
+        y: 475
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 602
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "margin-top"
+      value: "60"
+    }
+  }
+  layer {
+    name: "SideMenu-FilterList"
+    id: 2442
+    sourceid: 2482
+    transform {
+      anchorPoint {
+        x: 200
+        y: 370.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 202
+        y: 434.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "margin-top"
+      value: "60"
+    }
+  }
+  layer {
+    name: "SideMenu-SectionHeader-Dates"
+    id: 2443
+    sourceid: 2582
+    transform {
+      anchorPoint {
+        x: 200
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 601.75
+        y: 31.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "SideMenu-SectionHeader"
+    id: 2444
+    sourceid: 2582
+    transform {
+      anchorPoint {
+        x: 200
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 199.75
+        y: 31.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "clip"
+    value: "true"
+  }
+  properties {
+    key: "spacing"
+    value: "0.0"
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "width"
+    value: "fit-content"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+  childtemplates: "EPG_SideMenu-FooterGroup"
+  childtemplates: "EPG_SideMenu-JumpList"
+  childtemplates: "EPG_SideMenu-FilterList"
+  childtemplates: "EPG_SideMenu-SectionHeader"
+}
+sources {
+  uid: 2642
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.13333334028720856
+    green: 0.13333334028720856
+    blue: 0.13333334028720856
+  }
+  width: 400
+  height: 1015
+  copy_source: false
+}
+sources {
+  uid: 2494
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-FooterGroup.layout"
+  width: 400
+  height: 209
+  copy_source: true
+}
+sources {
+  uid: 2521
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-JumpList.layout"
+  width: 400
+  height: 950
+  copy_source: true
+}
+sources {
+  uid: 2482
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-FilterList.layout"
+  width: 400
+  height: 741
+  copy_source: true
+}
+sources {
+  uid: 2582
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-SectionHeader.layout"
+  width: 400
+  height: 65
+  copy_source: true
+}

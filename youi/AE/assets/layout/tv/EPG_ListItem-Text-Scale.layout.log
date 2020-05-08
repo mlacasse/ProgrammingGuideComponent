@@ -1,0 +1,67 @@
+activecomp {
+  name: "EPG_ListItem-Text-Scale"
+  width: 35
+  height: 100
+  defaultcameradistance: 48.611111
+  layer {
+    name: "ListItem-Text"
+    id: 2299
+    sourceid: 2270
+    transform {
+      anchorPoint {
+        x: 17.5
+        y: 50
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 17.5
+        y: 50
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIScalingLayout"
+  }
+  properties {
+    key: "scale-mode"
+    value: "fit"
+  }
+  properties {
+    key: "gravity"
+    value: "center"
+  }
+  childtemplates: "EPG_ListItem-Text"
+}
+sources {
+  uid: 2270
+  srctype: AE_COMP_SRC
+  name: "EPG_ListItem-Text.layout"
+  width: 35
+  height: 100
+  copy_source: true
+}

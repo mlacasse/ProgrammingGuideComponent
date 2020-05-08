@@ -1,0 +1,96 @@
+activecomp {
+  name: "EPG_Preview-Content-List"
+  width: 1328
+  height: 1080
+  defaultcameradistance: 1844.4445
+  layer {
+    name: "Preview-Asset-root"
+    id: 3014
+    sourceid: 3032
+    transform {
+      anchorPoint {
+        x: 635
+        y: 120
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 664
+        y: 120
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "placeholder"
+      value: "true"
+    }
+  }
+  classname: "CYIListView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentSubtype"
+    value: "streaming"
+  }
+  properties {
+    key: "componentType"
+    value: "list"
+  }
+  properties {
+    key: "layout"
+    value: "CYIColumnLayout"
+  }
+  properties {
+    key: "time-interpolator"
+    value: "CYIInterpolateLinear"
+  }
+  properties {
+    key: "horizontal-scroll"
+    value: "false"
+  }
+  properties {
+    key: "vertical-scroll"
+    value: "true"
+  }
+  properties {
+    key: "cascade-delay"
+    value: "1"
+  }
+  properties {
+    key: "spacing"
+    value: "0.0"
+  }
+  properties {
+    key: "insert-after-layer-id"
+    value: "-1"
+  }
+  childtemplates: "EPG_Preview-Asset-root"
+}
+sources {
+  uid: 3032
+  srctype: AE_COMP_SRC
+  name: "EPG_Preview-Asset-root.layout"
+  width: 1270
+  height: 240
+  copy_source: true
+}

@@ -1,0 +1,748 @@
+activecomp {
+  name: "Home-TransitionOverlay_WATCH_NOW"
+  width: 1920
+  height: 1080
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "Dark Gray Solid 3"
+    id: 66318
+    sourceid: 66573
+    transform {
+      anchorPoint {
+        x: 150
+        y: 15
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 446
+        y: 499
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 3"
+    id: 66319
+    sourceid: 66573
+    transform {
+      anchorPoint {
+        x: 150
+        y: 15
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 446
+        y: 963
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66320
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 470
+        y: 852
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66321
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 470
+        y: 1316
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66322
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 898
+        y: 852
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66323
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 898
+        y: 1316
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66324
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1327
+        y: 852
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66325
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1327
+        y: 1316
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66326
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1755
+        y: 852
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 6"
+    id: 66327
+    sourceid: 66585
+    transform {
+      anchorPoint {
+        x: 175
+        y: 12.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1755
+        y: 1316
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 4"
+    id: 66328
+    sourceid: 66575
+    transform {
+      anchorPoint {
+        x: 87
+        y: 38
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 184
+        y: 568
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 4"
+    id: 66329
+    sourceid: 66575
+    transform {
+      anchorPoint {
+        x: 87
+        y: 38
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 184
+        y: 1032
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66330
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 495
+        y: 680
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66331
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 495
+        y: 1144
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66332
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 923.66669
+        y: 680
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66333
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 923.66669
+        y: 1144
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66334
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1352.3334
+        y: 680
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66335
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1352.3334
+        y: 1144
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66336
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1781
+        y: 680
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Dark Gray Solid 5"
+    id: 66337
+    sourceid: 66578
+    transform {
+      anchorPoint {
+        x: 200
+        y: 150
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1781
+        y: 1144
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  properties {
+    key: "interactive"
+    value: "off"
+  }
+}
+sources {
+  uid: 66573
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.25174599885940552
+    green: 0.25174599885940552
+    blue: 0.25174599885940552
+  }
+  width: 300
+  height: 30
+  copy_source: false
+}
+sources {
+  uid: 66585
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.25174599885940552
+    green: 0.25174599885940552
+    blue: 0.25174599885940552
+  }
+  width: 350
+  height: 25
+  copy_source: false
+}
+sources {
+  uid: 66575
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.25174599885940552
+    green: 0.25174599885940552
+    blue: 0.25174599885940552
+  }
+  width: 174
+  height: 76
+  copy_source: false
+}
+sources {
+  uid: 66578
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.25174599885940552
+    green: 0.25174599885940552
+    blue: 0.25174599885940552
+  }
+  width: 400
+  height: 300
+  copy_source: false
+}

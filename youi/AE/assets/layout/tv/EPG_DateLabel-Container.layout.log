@@ -1,0 +1,85 @@
+activecomp {
+  name: "EPG_DateLabel-Container"
+  width: 210
+  height: 65
+  defaultcameradistance: 291.66666
+  layer {
+    name: "Today"
+    id: 1948
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 103.62012
+        y: 23.424
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 106.62012
+        y: 46.087009
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_CENTER
+      fontSize: 24
+      fontColor {
+        alpha: 1
+        red: 1
+        green: 1
+        blue: 1
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 207
+      boundsHeight: 22
+      isLabel: true
+      text: ""
+      multiline: true
+      isAllCaps: false
+    }
+    classname: "CYISDFAtlasTextSceneNode"
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.67843137254901964
+    green: 0.67843137254901964
+    blue: 0.67843137254901964
+  }
+  properties {
+    key: "width"
+    value: "fit-content"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+}
+sources {
+  uid: 1
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}

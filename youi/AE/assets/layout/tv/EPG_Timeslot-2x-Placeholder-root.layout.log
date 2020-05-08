@@ -1,0 +1,71 @@
+activecomp {
+  name: "EPG_Timeslot-2x-Placeholder-root"
+  width: 1300
+  height: 130
+  defaultcameradistance: 1805.5555
+  layer {
+    name: "Timeslot-2x-Placeholder"
+    id: 2820
+    sourceid: 2804
+    transform {
+      anchorPoint {
+        x: 650
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 650
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  childtemplates: "EPG_Timeslot-2x-Placeholder"
+}
+sources {
+  uid: 2804
+  srctype: AE_COMP_SRC
+  name: "EPG_Timeslot-2x-Placeholder.layout"
+  width: 1300
+  height: 130
+  copy_source: true
+}

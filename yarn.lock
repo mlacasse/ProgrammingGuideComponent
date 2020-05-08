@@ -903,10 +903,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@youi/react-native-youi@5.12.3":
-  version "5.12.3"
-  resolved "https://youi.jfrog.io/youi/api/npm/jspkg/@youi/react-native-youi/-/@youi/react-native-youi-5.12.3.tgz#b3d149cb9aa8fea32c41dd988f33a937ae25b413"
-  integrity sha1-s9FJy5qo/qMsQd2YjzOpN64ltBM=
+"@youi/react-native-youi@5.14.0":
+  version "5.14.0"
+  resolved "https://youi.jfrog.io/youi/api/npm/jspkg/@youi/react-native-youi/-/@youi/react-native-youi-5.14.0.tgz#45af506852b357be24ab6606c605d9cab944afe9"
+  integrity sha1-Ra9QaFKzV74kq2YGxgXZyrlEr+k=
   dependencies:
     "@babel/core" "7.0.0"
     create-react-class "^15.6.3"
@@ -915,6 +915,7 @@
     mock-socket "^8.0.2"
     prop-types "^15.6.1"
     react "16.6.3"
+    react-native "0.58.6"
 
 abab@^2.0.0:
   version "2.0.3"

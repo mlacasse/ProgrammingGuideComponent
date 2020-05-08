@@ -1,0 +1,131 @@
+activecomp {
+  name: "EPG_Time-List-Placeholder"
+  width: 1920
+  height: 65
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "Time-List-Item-Placeholder"
+    id: 2732
+    sourceid: 2720
+    transform {
+      anchorPoint {
+        x: 325
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1885
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Time-List-Item-Placeholder"
+    id: 2733
+    sourceid: 2720
+    transform {
+      anchorPoint {
+        x: 325
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1235
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Time-List-Item-Placeholder"
+    id: 2734
+    sourceid: 2720
+    transform {
+      anchorPoint {
+        x: 325
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 585
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "padding-left"
+    value: "209"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  childtemplates: "EPG_Time-List-Item-Placeholder"
+}
+sources {
+  uid: 2720
+  srctype: AE_COMP_SRC
+  name: "EPG_Time-List-Item-Placeholder.layout"
+  width: 650
+  height: 65
+  copy_source: true
+}

@@ -1,0 +1,173 @@
+activecomp {
+  name: "EPG_Preview-Text-Container"
+  width: 1084
+  height: 131
+  defaultcameradistance: 1505.5555
+  layer {
+    name: "Text-Metadata"
+    id: 3000
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 251.01239
+        y: 10.639999
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1048
+        y: 65.76
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.6
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_RIGHT
+      fontSize: 26
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 253
+      boundsHeight: 25
+      isLabel: true
+      text: ""
+      multiline: true
+      isAllCaps: false
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+    properties {
+      key: "margin-right"
+      value: "29"
+    }
+  }
+  layer {
+    name: "Text-Title"
+    id: 3001
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 1.1340001
+        y: 15.959999
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 35.178005
+        y: 68.8
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 32
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 790
+      boundsHeight: 47
+      isLabel: true
+      text: ""
+      multiline: true
+      ellipsis: true
+      isAllCaps: false
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+    properties {
+      key: "text-overflow"
+      value: "ellipsis"
+    }
+    properties {
+      key: "margin-left"
+      value: "30"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "0.0"
+  }
+  properties {
+    key: "width"
+    value: "fit-content"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+  properties {
+    key: "padding-left"
+    value: "34"
+  }
+  properties {
+    key: "padding-top"
+    value: "30"
+  }
+  properties {
+    key: "gravity"
+    value: "left"
+  }
+}
+sources {
+  uid: 1
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}

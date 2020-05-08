@@ -1,0 +1,128 @@
+activecomp {
+  name: "EPG_SideMenu-SectionHeader"
+  width: 400
+  height: 65
+  defaultcameradistance: 555.55554
+  layer {
+    name: "WhiteSectionBg"
+    id: 2582
+    sourceid: 2666
+    transform {
+      anchorPoint {
+        x: 200
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 200
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.08
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Text"
+    id: 2583
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 186.6846
+        y: 15.579999
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 200
+        y: 32
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_CENTER
+      fontSize: 41
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 372
+      boundsHeight: 47
+      isLabel: true
+      text: ""
+      multiline: true
+      ellipsis: true
+      isAllCaps: false
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+    properties {
+      key: "text-overflow"
+      value: "ellipsis"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+}
+sources {
+  uid: 2666
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 1
+    green: 1
+    blue: 1
+  }
+  width: 400
+  height: 65
+  copy_source: false
+}
+sources {
+  uid: 2
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}

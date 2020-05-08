@@ -1,0 +1,262 @@
+activecomp {
+  name: "EPG_Main-Epg"
+  width: 1920
+  height: 1080
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "ListofLists-root"
+    id: 2393
+    sourceid: 2366
+    transform {
+      anchorPoint {
+        x: 960
+        y: 507.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 572.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "bottom-left"
+    }
+    properties {
+      key: "margin-top"
+      value: "65"
+    }
+  }
+  layer {
+    name: "Time-List-root"
+    id: 2394
+    sourceid: 2758
+    transform {
+      anchorPoint {
+        x: 960
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "top-left"
+    }
+  }
+  layer {
+    name: "Time-Marker"
+    id: 2395
+    sourceid: 2770
+    transform {
+      anchorPoint {
+        x: 2
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 0
+        y: 4
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "CurrentTime.png"
+    id: 2396
+    sourceid: 1870
+    transform {
+      anchorPoint {
+        x: 6.5
+        y: 3.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 2
+        y: -0.6875
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    parentid: 2395
+  }
+  layer {
+    name: "DateLabel-Container"
+    id: 2397
+    sourceid: 1948
+    transform {
+      anchorPoint {
+        x: 105
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 105
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.67843137254901964
+    green: 0.67843137254901964
+    blue: 0.67843137254901964
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "width"
+    value: "fit-content"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+  childtemplates: "EPG_ListofLists-root"
+  childtemplates: "EPG_Time-List-root"
+  childtemplates: "EPG_Time-Marker"
+  childtemplates: "EPG_DateLabel-Container"
+}
+sources {
+  uid: 2366
+  srctype: AE_COMP_SRC
+  name: "EPG_ListofLists-root.layout"
+  width: 1920
+  height: 1015
+  copy_source: true
+}
+sources {
+  uid: 2758
+  srctype: AE_COMP_SRC
+  name: "EPG_Time-List-root.layout"
+  width: 1920
+  height: 65
+  copy_source: true
+}
+sources {
+  uid: 2770
+  srctype: AE_COMP_SRC
+  name: "EPG_Time-Marker.layout"
+  width: 4
+  height: 1080
+  copy_source: true
+}
+sources {
+  uid: 1870
+  srctype: AE_IMAGE_SRC
+  name: "CurrentTime.png"
+  width: 13
+  height: 7
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
+sources {
+  uid: 1948
+  srctype: AE_COMP_SRC
+  name: "EPG_DateLabel-Container.layout"
+  width: 210
+  height: 65
+  copy_source: true
+}

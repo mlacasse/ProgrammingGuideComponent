@@ -2,18 +2,18 @@
  * Basic You.i RN app
  */
 import React, { Component } from "react";
-import { AppRegistry, View } from "react-native";
+import { AppRegistry } from "react-native";
 
 import ProgrammingGuide from './ProgrammingGuide';
 
-const schedules = require('./schedules.json');
+const data = require('./schedules.json');
 
 export default class YiReactApp extends Component {
   render() {
+    const startTime = new Date('2020-03-23T16:00:00Z').getTime() / 1000;
+
     return (
-      <View style={{ flex: 1 }}>
-        <ProgrammingGuide onLayout={() => console.log('ProgrammingGuide', 'onLayout')} schedules={schedules}/>
-      </View>
+      <ProgrammingGuide schedulesStartTime={startTime} currentChannelIndex={5} schedules={data}/>
     );
   }
 }

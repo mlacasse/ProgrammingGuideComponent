@@ -1,0 +1,130 @@
+activecomp {
+  name: "EPG_Image"
+  width: 297
+  height: 222
+  defaultcameradistance: 412.5
+  layer {
+    name: "default.jpeg"
+    id: 2096
+    sourceid: 1871
+    transform {
+      anchorPoint {
+        x: 148.5
+        y: 111.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 148.5
+        y: 111
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "ImageNode-Outgoing"
+    id: 2097
+    sourceid: 1871
+    transform {
+      anchorPoint {
+        x: 148.5
+        y: 111.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 148
+        y: 111
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "ImageNode"
+    id: 2098
+    sourceid: 1871
+    transform {
+      anchorPoint {
+        x: 148.5
+        y: 111.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 148
+        y: 111
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  classname: "CYIImageView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentType"
+    value: "image"
+  }
+}
+sources {
+  uid: 1871
+  srctype: AE_IMAGE_SRC
+  name: "default.jpeg"
+  width: 297
+  height: 223
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}

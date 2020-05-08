@@ -1,0 +1,56 @@
+tracks {
+  binding: IS_VISIBLE
+  targetid: 2124
+  targetname: "Timeslot-Placeholder-root"
+  keytimes {
+    datatype: AE_INT_DATA
+    timeOffset: 0
+    inttype: AE_INTERP_HOLD
+    ivalue1: 1
+  }
+}
+tracks {
+  binding: IS_VISIBLE
+  targetid: 2125
+  targetname: "Timeslot-Placeholder-root"
+  keytimes {
+    datatype: AE_INT_DATA
+    timeOffset: 0
+    inttype: AE_INTERP_HOLD
+    ivalue1: 1
+  }
+}
+tracks {
+  binding: IS_VISIBLE
+  targetid: 2126
+  targetname: "Timeslot-Placeholder-root"
+  keytimes {
+    datatype: AE_INT_DATA
+    timeOffset: 0
+    inttype: AE_INTERP_HOLD
+    ivalue1: 1
+  }
+}
+markers {
+  starttime: 0
+  duration: 1.6
+  name: "Loop"
+  tracksSelection {
+    targetid: 2124
+    binding: IS_VISIBLE
+  }
+  tracksSelection {
+    targetid: 2125
+    binding: IS_VISIBLE
+  }
+  tracksSelection {
+    targetid: 2126
+    binding: IS_VISIBLE
+  }
+  alltracks: false
+  looping: false
+  properties {
+    key: "recursive"
+    value: "true"
+  }
+}

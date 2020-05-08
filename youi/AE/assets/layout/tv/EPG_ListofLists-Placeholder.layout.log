@@ -1,0 +1,349 @@
+activecomp {
+  name: "EPG_ListofLists-Placeholder"
+  width: 1920
+  height: 1015
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "Lane-Placeholder5-root"
+    id: 2335
+    sourceid: 2241
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 950
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Placeholder-root"
+    id: 2336
+    sourceid: 2193
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 823.57141
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Placeholder2-root"
+    id: 2337
+    sourceid: 2205
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 697.14288
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Placeholder4-root"
+    id: 2338
+    sourceid: 2229
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 570.71429
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Placeholder3-root"
+    id: 2339
+    sourceid: 2217
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 444.28571
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Placeholder-root"
+    id: 2340
+    sourceid: 2193
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 317.85715
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Placeholder3-root"
+    id: 2341
+    sourceid: 2217
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 191.42857
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Lane-Placeholder2-root"
+    id: 2342
+    sourceid: 2205
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIColumnLayout"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "horizontal-scroll"
+    value: "false"
+  }
+  properties {
+    key: "vertical-scroll"
+    value: "true"
+  }
+  properties {
+    key: "vertical-begin-magnet-offset"
+    value: "130"
+  }
+  childtemplates: "EPG_Lane-Placeholder5-root"
+  childtemplates: "EPG_Lane-Placeholder-root"
+  childtemplates: "EPG_Lane-Placeholder2-root"
+  childtemplates: "EPG_Lane-Placeholder4-root"
+  childtemplates: "EPG_Lane-Placeholder3-root"
+}
+sources {
+  uid: 2241
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane-Placeholder5-root.layout"
+  width: 1920
+  height: 130
+  copy_source: true
+}
+sources {
+  uid: 2193
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane-Placeholder-root.layout"
+  width: 1920
+  height: 130
+  copy_source: true
+}
+sources {
+  uid: 2205
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane-Placeholder2-root.layout"
+  width: 1920
+  height: 130
+  copy_source: true
+}
+sources {
+  uid: 2229
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane-Placeholder4-root.layout"
+  width: 1920
+  height: 130
+  copy_source: true
+}
+sources {
+  uid: 2217
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane-Placeholder3-root.layout"
+  width: 1920
+  height: 130
+  copy_source: true
+}

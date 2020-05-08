@@ -1,0 +1,229 @@
+activecomp {
+  name: "TextInput_Text-Edit"
+  width: 1740
+  height: 68
+  defaultcameradistance: 2416.6667
+  layer {
+    name: "InputProperties"
+    id: 361
+    sourceid: 401
+    transform {
+      anchorPoint {
+        x: 39
+        y: 34
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1671.6281
+        y: -9.4500008
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    parentid: 364
+  }
+  layer {
+    name: "Text-BG"
+    id: 362
+    sourceid: 394
+    transform {
+      anchorPoint {
+        x: 870
+        y: 34
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 870
+        y: 34
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Text-BG-Focus"
+    id: 363
+    sourceid: 420
+    transform {
+      anchorPoint {
+        x: 870
+        y: 34
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 870
+        y: 34
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Text"
+    id: 364
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 2.6280003
+        y: 6.3240013
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 0.80300009
+        y: 49.774002
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 25
+      fontColor {
+        alpha: 1
+        red: 0.84706008434295654
+        green: 0.84706008434295654
+        blue: 0.84706008434295654
+      }
+      fontName: "Poppins-Regular"
+      isPointText: true
+      isLabel: true
+      text: "Default text"
+      multiline: false
+      isAllCaps: false
+    }
+  }
+  classname: "CYIPasswordTextEditView"
+  bgcolor {
+    alpha: 1
+    red: 1
+    green: 1
+    blue: 1
+  }
+  properties {
+    key: "componentSubtype"
+    value: "regular"
+  }
+  properties {
+    key: "componentType"
+    value: "input"
+  }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
+  }
+  properties {
+    key: "gravity"
+    value: "left"
+  }
+}
+sources {
+  uid: 401
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.20000000298023224
+    green: 0.20000000298023224
+    blue: 0.20000000298023224
+  }
+  width: 78
+  height: 68
+  copy_source: false
+}
+sources {
+  uid: 394
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.94509804248809814
+    green: 0.94509804248809814
+    blue: 0.94509804248809814
+  }
+  width: 1740
+  height: 68
+  copy_source: false
+}
+sources {
+  uid: 420
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.31764706969261169
+    green: 0.73333334922790527
+    blue: 0.78431373834609985
+  }
+  width: 1740
+  height: 68
+  copy_source: false
+}
+sources {
+  uid: 4
+  srctype: AE_FONT_SRC
+  name: "Poppins-Regular"
+  copy_source: true
+  file_name: "yi_Poppins-Regular.otf"
+  style_name: "Regular"
+}

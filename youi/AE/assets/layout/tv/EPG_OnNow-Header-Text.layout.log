@@ -1,0 +1,209 @@
+activecomp {
+  name: "EPG_OnNow-Header-Text"
+  width: 1701
+  height: 75
+  defaultcameradistance: 2362.5
+  layer {
+    name: "Chevron-ButtonGroup"
+    id: 3626
+    sourceid: 3643
+    transform {
+      anchorPoint {
+        x: 39
+        y: 37.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1570
+        y: 38
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "margin-right"
+      value: "100"
+    }
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+  }
+  layer {
+    name: "Text-OnNow"
+    id: 3627
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 2.2680054
+        y: 15.959998
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 210
+        y: 38
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 42
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 1282
+      boundsHeight: 46
+      isLabel: true
+      text: ""
+      multiline: true
+      ellipsis: true
+      isAllCaps: false
+    }
+    properties {
+      key: "margin-left"
+      value: "73"
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+    properties {
+      key: "text-overflow"
+      value: "ellipsis"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Text-Date"
+    id: 3628
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 2.592
+        y: 12.959999
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 3.492
+        y: 37.999992
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.6
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 32
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 181
+      boundsHeight: 31
+      isLabel: true
+      text: ""
+      multiline: true
+      ellipsis: true
+      isAllCaps: false
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+    properties {
+      key: "text-overflow"
+      value: "ellipsis"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIRowLayout"
+  }
+  properties {
+    key: "gravity"
+    value: "left"
+  }
+  childtemplates: "EPG_Chevron-ButtonGroup"
+}
+sources {
+  uid: 3643
+  srctype: AE_COMP_SRC
+  name: "EPG_Chevron-ButtonGroup.layout"
+  width: 78
+  height: 75
+  copy_source: true
+}
+sources {
+  uid: 2
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}

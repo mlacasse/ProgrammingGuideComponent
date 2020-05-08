@@ -1,0 +1,175 @@
+activecomp {
+  name: "EPG_Favorite-Button"
+  width: 190
+  height: 50
+  defaultcameradistance: 263.88889
+  layer {
+    name: "Royal Blue Solid 11"
+    id: 3221
+    sourceid: 3239
+    transform {
+      anchorPoint {
+        x: 95
+        y: 2
+        z: 0
+      }
+      scale {
+        x: 0
+        y: 1
+        z: 1
+      }
+      position {
+        x: 95
+        y: 41.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Text-Favourite"
+    id: 3222
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 0.70199585
+        y: 9.8799992
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 37
+        y: 12.352
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.6
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 32
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 183
+      boundsHeight: 25
+      isLabel: true
+      text: ""
+      multiline: true
+      isAllCaps: false
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+  }
+  layer {
+    name: "FavouriteIconToggle"
+    id: 3223
+    sourceid: 3199
+    transform {
+      anchorPoint {
+        x: 15
+        y: 15
+        z: 0
+      }
+      scale {
+        x: 1.1333333
+        y: 1.1333333
+        z: 1
+      }
+      position {
+        x: 13.5
+        y: 16
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  classname: "CYIToggleButtonView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentSubtype"
+    value: "toggle"
+  }
+  properties {
+    key: "componentType"
+    value: "button"
+  }
+  childtemplates: "EPG_FavouriteIconToggle"
+}
+sources {
+  uid: 3239
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 190
+  height: 4
+  copy_source: false
+}
+sources {
+  uid: 2
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}
+sources {
+  uid: 3199
+  srctype: AE_COMP_SRC
+  name: "EPG_FavouriteIconToggle.layout"
+  width: 30
+  height: 30
+  copy_source: true
+}

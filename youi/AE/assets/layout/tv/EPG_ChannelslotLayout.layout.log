@@ -1,0 +1,71 @@
+activecomp {
+  name: "EPG_ChannelslotLayout"
+  width: 130
+  height: 130
+  defaultcameradistance: 180.55556
+  layer {
+    name: "Channelslot"
+    id: 1936
+    sourceid: 1890
+    transform {
+      anchorPoint {
+        x: 65
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 65
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIScalingLayout"
+  }
+  properties {
+    key: "scale-mode"
+    value: "fit"
+  }
+  childtemplates: "EPG_Channelslot"
+}
+sources {
+  uid: 1890
+  srctype: AE_COMP_SRC
+  name: "EPG_Channelslot.layout"
+  width: 130
+  height: 130
+  copy_source: true
+}

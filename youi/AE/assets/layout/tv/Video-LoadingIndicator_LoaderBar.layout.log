@@ -1,0 +1,199 @@
+activecomp {
+  name: "Video-LoadingIndicator_LoaderBar"
+  width: 1920
+  height: 20
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "BG"
+    id: 65591
+    sourceid: 65618
+    transform {
+      anchorPoint {
+        x: 960
+        y: 10
+        z: 0
+      }
+      scale {
+        x: 0.01
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 10
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "interactive"
+      value: "off"
+    }
+  }
+  layer {
+    name: "VideoLoader-Tip.png"
+    id: 65592
+    sourceid: 65360
+    transform {
+      anchorPoint {
+        x: 12.5
+        y: 25
+        z: 0
+      }
+      scale {
+        x: -0.4
+        y: 0.4
+        z: 1
+      }
+      position {
+        x: 973.375
+        y: 10
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "interactive"
+      value: "off"
+    }
+  }
+  layer {
+    name: "VideoLoader-Tip.png"
+    id: 65593
+    sourceid: 65360
+    transform {
+      anchorPoint {
+        x: 12.5
+        y: 25
+        z: 0
+      }
+      scale {
+        x: 0.4
+        y: 0.4
+        z: 1
+      }
+      position {
+        x: 946
+        y: 10
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "interactive"
+      value: "off"
+    }
+  }
+  layer {
+    name: "VideoLoader-Gradient.png"
+    id: 65594
+    sourceid: 65352
+    transform {
+      anchorPoint {
+        x: 743
+        y: 25
+        z: 0
+      }
+      scale {
+        x: 0.01
+        y: 0.4
+        z: 1
+      }
+      position {
+        x: 960
+        y: 10
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "interactive"
+      value: "off"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+}
+sources {
+  uid: 65618
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.24313725531101227
+    blue: 0.33725491166114807
+  }
+  width: 1920
+  height: 20
+  copy_source: false
+}
+sources {
+  uid: 65360
+  srctype: AE_IMAGE_SRC
+  name: "VideoLoader-Tip.png"
+  width: 25
+  height: 50
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
+sources {
+  uid: 65352
+  srctype: AE_IMAGE_SRC
+  name: "VideoLoader-Gradient.png"
+  width: 1486
+  height: 50
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}

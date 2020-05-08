@@ -1,0 +1,76 @@
+activecomp {
+  name: "EPG_Timeslot-Filler-root"
+  width: 650
+  height: 130
+  defaultcameradistance: 902.77777
+  layer {
+    name: "Timeslot-Filler"
+    id: 2881
+    sourceid: 2860
+    transform {
+      anchorPoint {
+        x: 325
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  classname: "EPGAssetView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
+  }
+  childtemplates: "EPG_Timeslot-Filler"
+}
+sources {
+  uid: 2860
+  srctype: AE_COMP_SRC
+  name: "EPG_Timeslot-Filler.layout"
+  width: 650
+  height: 130
+  copy_source: true
+}

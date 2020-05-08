@@ -1,0 +1,118 @@
+activecomp {
+  name: "EPG_Details-Contents"
+  width: 1762
+  height: 222
+  defaultcameradistance: 2447.2222
+  layer {
+    name: "Details-Text-Container"
+    id: 1986
+    sourceid: 2025
+    transform {
+      anchorPoint {
+        x: 629
+        y: 111
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1133
+        y: 111
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.92
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "Image"
+    id: 1987
+    sourceid: 2096
+    transform {
+      anchorPoint {
+        x: 148.5
+        y: 111
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 342.5
+        y: 111
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIRowLayout"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "padding-left"
+    value: "194"
+  }
+  properties {
+    key: "clip"
+    value: "true"
+  }
+  childtemplates: "EPG_Details-Text-Container"
+  childtemplates: "EPG_Image"
+}
+sources {
+  uid: 2025
+  srctype: AE_COMP_SRC
+  name: "EPG_Details-Text-Container.layout"
+  width: 1258
+  height: 222
+  copy_source: true
+}
+sources {
+  uid: 2096
+  srctype: AE_COMP_SRC
+  name: "EPG_Image.layout"
+  width: 297
+  height: 222
+  copy_source: true
+}

@@ -1,0 +1,41 @@
+activecomp {
+  name: "EPG_Lane"
+  width: 1710
+  height: 134
+  defaultcameradistance: 2375
+  classname: "EPGChannelListView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "layout"
+    value: "CYIRowLayout"
+  }
+  properties {
+    key: "componentSubtype"
+    value: "streaming"
+  }
+  properties {
+    key: "componentType"
+    value: "list"
+  }
+  properties {
+    key: "horizontal-scroll"
+    value: "true"
+  }
+  properties {
+    key: "vertical-scroll"
+    value: "false"
+  }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
+  }
+}

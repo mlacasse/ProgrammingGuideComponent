@@ -1,0 +1,92 @@
+activecomp {
+  name: "EPG_Comp 1"
+  width: 1700
+  height: 1080
+  defaultcameradistance: 2361.1111
+  layer {
+    name: "OnNow-Details-Slot-root"
+    id: 3469
+    sourceid: 3453
+    transform {
+      anchorPoint {
+        x: 745
+        y: 181
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 850
+        y: 181
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "placeholder"
+      value: "true"
+    }
+  }
+  classname: "CYIListView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentSubtype"
+    value: "streaming"
+  }
+  properties {
+    key: "componentType"
+    value: "list"
+  }
+  properties {
+    key: "horizontal-scroll"
+    value: "false"
+  }
+  properties {
+    key: "vertical-scroll"
+    value: "true"
+  }
+  properties {
+    key: "layout"
+    value: "CYIColumnLayout"
+  }
+  properties {
+    key: "spacing"
+    value: "0.0"
+  }
+  properties {
+    key: "time-interpolator"
+    value: "CYIInterpolateLinear"
+  }
+  properties {
+    key: "insert-after-layer-id"
+    value: "-1"
+  }
+  childtemplates: "EPG_OnNow-Details-Slot-root"
+}
+sources {
+  uid: 3453
+  srctype: AE_COMP_SRC
+  name: "EPG_OnNow-Details-Slot-root.layout"
+  width: 1490
+  height: 362
+  copy_source: true
+}

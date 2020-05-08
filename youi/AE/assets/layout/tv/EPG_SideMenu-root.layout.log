@@ -1,0 +1,59 @@
+activecomp {
+  name: "EPG_SideMenu-root"
+  width: 400
+  height: 1015
+  defaultcameradistance: 555.55554
+  layer {
+    name: "SideMenu-resize"
+    id: 2570
+    sourceid: 2558
+    transform {
+      anchorPoint {
+        x: 200
+        y: 507.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 200
+        y: 507.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "scale-mode"
+    value: "fit"
+  }
+  childtemplates: "EPG_SideMenu-resize"
+}
+sources {
+  uid: 2558
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-resize.layout"
+  width: 400
+  height: 1015
+  copy_source: true
+}

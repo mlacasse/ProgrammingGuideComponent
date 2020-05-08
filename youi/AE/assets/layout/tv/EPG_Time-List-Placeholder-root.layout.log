@@ -1,0 +1,63 @@
+activecomp {
+  name: "EPG_Time-List-Placeholder-root"
+  width: 1920
+  height: 65
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "Time-List-Placeholder"
+    id: 2746
+    sourceid: 2732
+    transform {
+      anchorPoint {
+        x: 960
+        y: 32.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.67843137254901964
+    green: 0.67843137254901964
+    blue: 0.67843137254901964
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "clip"
+    value: "false"
+  }
+  childtemplates: "EPG_Time-List-Placeholder"
+}
+sources {
+  uid: 2732
+  srctype: AE_COMP_SRC
+  name: "EPG_Time-List-Placeholder.layout"
+  width: 1920
+  height: 65
+  copy_source: true
+}

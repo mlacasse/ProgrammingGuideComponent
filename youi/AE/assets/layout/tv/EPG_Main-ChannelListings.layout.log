@@ -1,0 +1,145 @@
+activecomp {
+  name: "EPG_Main-ChannelListings"
+  width: 1920
+  height: 1080
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "BG"
+    id: 3164
+    sourceid: 3176
+    transform {
+      anchorPoint {
+        x: 960
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "ChannelListings-Menu"
+    id: 3165
+    sourceid: 3181
+    transform {
+      anchorPoint {
+        x: 296
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 296
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Preview-Content-List"
+    id: 3166
+    sourceid: 3014
+    transform {
+      anchorPoint {
+        x: 664
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1256
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  childtemplates: "EPG_ChannelListings-Menu"
+  childtemplates: "EPG_Preview-Content-List"
+}
+sources {
+  uid: 3176
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  width: 1920
+  height: 1080
+  copy_source: false
+}
+sources {
+  uid: 3181
+  srctype: AE_COMP_SRC
+  name: "EPG_ChannelListings-Menu.layout"
+  width: 592
+  height: 1080
+  copy_source: true
+}
+sources {
+  uid: 3014
+  srctype: AE_COMP_SRC
+  name: "EPG_Preview-Content-List.layout"
+  width: 1328
+  height: 1080
+  copy_source: true
+}

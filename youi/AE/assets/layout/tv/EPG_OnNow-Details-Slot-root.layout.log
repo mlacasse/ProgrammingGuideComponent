@@ -1,0 +1,71 @@
+activecomp {
+  name: "EPG_OnNow-Details-Slot-root"
+  width: 1490
+  height: 362
+  defaultcameradistance: 2069.4443
+  layer {
+    name: "OnNow-Details-Slot"
+    id: 3453
+    sourceid: 3359
+    transform {
+      anchorPoint {
+        x: 745
+        y: 181
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 745
+        y: 181
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+  properties {
+    key: "clip"
+    value: "false"
+  }
+  properties {
+    key: "time-interpolator"
+    value: "CYIInterpolateLinear"
+  }
+  childtemplates: "EPG_OnNow-Details-Slot"
+}
+sources {
+  uid: 3359
+  srctype: AE_COMP_SRC
+  name: "EPG_OnNow-Details-Slot.layout"
+  width: 1490
+  height: 362
+  copy_source: true
+}

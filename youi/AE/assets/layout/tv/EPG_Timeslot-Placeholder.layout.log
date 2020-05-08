@@ -1,0 +1,304 @@
+activecomp {
+  name: "EPG_Timeslot-Placeholder"
+  width: 650
+  height: 130
+  defaultcameradistance: 902.77777
+  layer {
+    name: "borderRight"
+    id: 2921
+    sourceid: 2636
+    transform {
+      anchorPoint {
+        x: 0.5
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 649.5
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderLeft"
+    id: 2922
+    sourceid: 2635
+    transform {
+      anchorPoint {
+        x: 0.5
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 0.5
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderBottom"
+    id: 2923
+    sourceid: 2616
+    transform {
+      anchorPoint {
+        x: 325
+        y: 0.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 129.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "bottom"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderTop"
+    id: 2924
+    sourceid: 2621
+    transform {
+      anchorPoint {
+        x: 325
+        y: 0.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 0.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "top"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "Text-Placeholder"
+    id: 2925
+    sourceid: 2641
+    transform {
+      anchorPoint {
+        x: 125
+        y: 21.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 150
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.6
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "margin-left"
+      value: "25"
+    }
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+  }
+  classname: "CYIActivityIndicatorView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentType"
+    value: "loader"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "scale-mode"
+    value: "fit"
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+}
+sources {
+  uid: 2636
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 1
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2635
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 1
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2616
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.501960813999176
+    green: 0.501960813999176
+    blue: 0.501960813999176
+  }
+  width: 650
+  height: 1
+  copy_source: false
+}
+sources {
+  uid: 2621
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.501960813999176
+    green: 0.501960813999176
+    blue: 0.501960813999176
+  }
+  width: 650
+  height: 1
+  copy_source: false
+}
+sources {
+  uid: 2641
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 250
+  height: 43
+  copy_source: false
+}

@@ -1,0 +1,544 @@
+activecomp {
+  name: "EPG_Timeslot-Filler"
+  width: 650
+  height: 130
+  defaultcameradistance: 902.77777
+  layer {
+    name: "BG"
+    id: 2860
+    sourceid: 2653
+    transform {
+      anchorPoint {
+        x: 325
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "item-gravity"
+      value: "center"
+    }
+  }
+  layer {
+    name: "borderRight"
+    id: 2861
+    sourceid: 2636
+    transform {
+      anchorPoint {
+        x: 0.5
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 649.5
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderLeft"
+    id: 2862
+    sourceid: 2635
+    transform {
+      anchorPoint {
+        x: 0.5
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 0.5
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderBottom"
+    id: 2863
+    sourceid: 2616
+    transform {
+      anchorPoint {
+        x: 325
+        y: 0.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 129.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "bottom"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderTop"
+    id: 2864
+    sourceid: 2621
+    transform {
+      anchorPoint {
+        x: 325
+        y: 0.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 0.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "top"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderRight-Focus"
+    id: 2865
+    sourceid: 2660
+    transform {
+      anchorPoint {
+        x: 3
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 647
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderLeft-Focus"
+    id: 2866
+    sourceid: 2659
+    transform {
+      anchorPoint {
+        x: 3
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 3
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderBottom-Focus"
+    id: 2867
+    sourceid: 2617
+    transform {
+      anchorPoint {
+        x: 319
+        y: 3
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 127
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "bottom"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "margin-right"
+      value: "6"
+    }
+    properties {
+      key: "margin-left"
+      value: "6"
+    }
+  }
+  layer {
+    name: "borderTop-Focus"
+    id: 2868
+    sourceid: 2629
+    transform {
+      anchorPoint {
+        x: 319
+        y: 3
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 325
+        y: 3
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "top"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "margin-left"
+      value: "6"
+    }
+    properties {
+      key: "margin-right"
+      value: "6"
+    }
+  }
+  classname: "CYIPushButtonView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "componentSubtype"
+    value: "push"
+  }
+  properties {
+    key: "componentType"
+    value: "button"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "scale-mode"
+    value: "fit"
+  }
+}
+sources {
+  uid: 2653
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.074509806931018829
+    green: 0.15294118225574493
+    blue: 0.20000000298023224
+  }
+  width: 650
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2636
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 1
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2635
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 1
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2616
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.501960813999176
+    green: 0.501960813999176
+    blue: 0.501960813999176
+  }
+  width: 650
+  height: 1
+  copy_source: false
+}
+sources {
+  uid: 2621
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.501960813999176
+    green: 0.501960813999176
+    blue: 0.501960813999176
+  }
+  width: 650
+  height: 1
+  copy_source: false
+}
+sources {
+  uid: 2660
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 6
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2659
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 6
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2617
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 638
+  height: 6
+  copy_source: false
+}
+sources {
+  uid: 2629
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 638
+  height: 6
+  copy_source: false
+}

@@ -1,0 +1,466 @@
+activecomp {
+  name: "EPG_Channelslot"
+  width: 130
+  height: 130
+  defaultcameradistance: 180.55556
+  layer {
+    name: "SCALER"
+    id: 1890
+    sourceid: 2648
+    transform {
+      anchorPoint {
+        x: 0
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 65
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "center"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "BG"
+    id: 1891
+    sourceid: 2654
+    transform {
+      anchorPoint {
+        x: 65
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 65
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "item-gravity"
+      value: "center"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderRight-Focus"
+    id: 1892
+    sourceid: 2657
+    transform {
+      anchorPoint {
+        x: 3
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 127
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderLeft-Focus"
+    id: 1893
+    sourceid: 2658
+    transform {
+      anchorPoint {
+        x: 3
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 3
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "borderBottom-Focus"
+    id: 1894
+    sourceid: 2620
+    transform {
+      anchorPoint {
+        x: 59
+        y: 3
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 65
+        y: 127
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "bottom"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "margin-right"
+      value: "6"
+    }
+    properties {
+      key: "margin-left"
+      value: "6"
+    }
+  }
+  layer {
+    name: "borderTop-Focus"
+    id: 1895
+    sourceid: 2630
+    transform {
+      anchorPoint {
+        x: 59
+        y: 3
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 65
+        y: 3
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "top"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "margin-left"
+      value: "6"
+    }
+    properties {
+      key: "margin-right"
+      value: "6"
+    }
+  }
+  layer {
+    name: "ChannelImage"
+    id: 1896
+    sourceid: 1877
+    transform {
+      anchorPoint {
+        x: 37.5
+        y: 37.5
+        z: 0
+      }
+      scale {
+        x: 1.22
+        y: 1.22
+        z: 1
+      }
+      position {
+        x: 50
+        y: 50
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    parentid: 1897
+    properties {
+      key: "item-gravity"
+      value: "center"
+    }
+  }
+  layer {
+    name: "ScalePropCenterAnchor"
+    id: 1897
+    sourceid: 2608
+    transform {
+      anchorPoint {
+        x: 50
+        y: 50
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 65
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  classname: "CYIPushButtonView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "componentSubtype"
+    value: "push"
+  }
+  properties {
+    key: "componentType"
+    value: "button"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  childtemplates: "EPG_ChannelImage"
+}
+sources {
+  uid: 2648
+  srctype: AE_NULL_SRC
+  width: 100
+  height: 100
+  copy_source: false
+}
+sources {
+  uid: 2654
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.074509806931018829
+    green: 0.15294118225574493
+    blue: 0.20000000298023224
+  }
+  width: 130
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2657
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 6
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2658
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 6
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2620
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 118
+  height: 6
+  copy_source: false
+}
+sources {
+  uid: 2630
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 118
+  height: 6
+  copy_source: false
+}
+sources {
+  uid: 1877
+  srctype: AE_COMP_SRC
+  name: "EPG_ChannelImage.layout"
+  width: 75
+  height: 75
+  copy_source: true
+}
+sources {
+  uid: 2608
+  srctype: AE_NULL_SRC
+  width: 100
+  height: 100
+  copy_source: false
+}

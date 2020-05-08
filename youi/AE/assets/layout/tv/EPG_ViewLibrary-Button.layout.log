@@ -1,0 +1,132 @@
+activecomp {
+  name: "EPG_ViewLibrary-Button"
+  width: 240
+  height: 50
+  defaultcameradistance: 333.33334
+  layer {
+    name: "Royal Blue Solid 12"
+    id: 3241
+    sourceid: 3256
+    transform {
+      anchorPoint {
+        x: 120
+        y: 2
+        z: 0
+      }
+      scale {
+        x: 0
+        y: 1
+        z: 1
+      }
+      position {
+        x: 120
+        y: 36.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Text-ViewFullLibrary"
+    id: 3242
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 117.50226
+        y: 15.615999
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 117.4541
+        y: 17.588
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.6
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 32
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 240
+      boundsHeight: 25
+      isLabel: true
+      text: ""
+      multiline: true
+      isAllCaps: false
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+  }
+  classname: "CYIToggleButtonView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentSubtype"
+    value: "toggle"
+  }
+  properties {
+    key: "componentType"
+    value: "button"
+  }
+}
+sources {
+  uid: 3256
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 240
+  height: 4
+  copy_source: false
+}
+sources {
+  uid: 2
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}

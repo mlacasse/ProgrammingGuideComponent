@@ -1,0 +1,71 @@
+activecomp {
+  name: "EPG_FavouriteslotLayout"
+  width: 80
+  height: 130
+  defaultcameradistance: 111.11111
+  layer {
+    name: "Favouriteslot"
+    id: 2084
+    sourceid: 2054
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 40
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  properties {
+    key: "layout"
+    value: "CYIScalingLayout"
+  }
+  properties {
+    key: "scale-mode"
+    value: "fit"
+  }
+  childtemplates: "EPG_Favouriteslot"
+}
+sources {
+  uid: 2054
+  srctype: AE_COMP_SRC
+  name: "EPG_Favouriteslot.layout"
+  width: 80
+  height: 130
+  copy_source: true
+}

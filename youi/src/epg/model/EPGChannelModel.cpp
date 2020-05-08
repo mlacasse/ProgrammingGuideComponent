@@ -1,24 +1,48 @@
-// © You i Labs Inc. 2000-2017. All rights reserved.
+#include "EPGChannelModel.h"
 
-#include "epg/model/EPGChannelModel.h"
+#include "../react/ProgrammingGuideProps.h"
 
-#include <logging/YiLogger.h>
+#include <asset/YiAssetTextureBase.h>
+#include <utility/FileUtilities.h>
+#include <utility/FollyDynamicUtilities.h>
+#include <utility/InitFromValue.h>
 #include <utility/YiString.h>
 
-#define LOG_TAG "EPGChannelModel"
+EPGChannelModel::EPGChannelModel()
+{}
 
-EPGChannelModel::EPGChannelModel(bool isFavorite, uint32_t channelNumber, CYIString channelId, CYIString callSign, CYIString name, CYIUrl imageUrl)
-    : m_isFavorite(isFavorite)
-    , m_channelNumber(channelNumber)
-    , m_channelId(channelId)
-    , m_callSign(callSign)
-    , m_name(name)
-    , m_imageUrl(imageUrl)
+bool EPGChannelModel::Init(const folly::dynamic &value)
 {
-    YI_LOGD(LOG_TAG, "Channel: %s %u %s %s %s %s", isFavorite ? "true" : "false", channelNumber, channelId.GetData(), callSign.GetData(), name.GetData(), imageUrl.ToString().GetData());
-}
+    bool ok = true;
 
-EPGChannelModel::~EPGChannelModel()
-{
-    m_assets.clear();
+    ok = ok && InitFromMandatoryField(m_channelId, value, "channelId");
+    ok = ok && InitFromMandatoryField(m_name, value, "channelName");
+    ok = ok && InitFromMandatoryField(m_channelNumber, value, "channelNumber");
+    ok = ok && InitFromMandatoryField(m_callSign, value, "channelCallSign");
+    ok = ok && InitFromMandatoryField(m_isFavorite, value, "isFavorite");
+    ok = ok && InitFromMandatoryField(m_assets, value, "contents");
+
+    if (value["channelLogo"].isObject())
+    {
+        CYIString imageUrl;
+        CYIString defaultImageUrl;
+
+        folly::dynamic channelLogo = value["channelLogo"];
+
+        ok = ok && InitFromOptionalField(imageUrl, channelLogo, "imageUrl");
+        if (ok)
+        {
+            m_imageUrl = CYIUrl(GetModifiedResourceFilePath(imageUrl.GetData(), &CYIAssetTextureBase::GetClassTypeInfo()));
+        }
+
+        ok = ok && InitFromOptionalField(defaultImageUrl, channelLogo, "defaultImageUrl");
+        if (ok)
+        {
+            m_defaultImageUrl = CYIUrl(GetModifiedResourceFilePath(defaultImageUrl.GetData(), &CYIAssetTextureBase::GetClassTypeInfo()));
+        }
+    }
+
+    m_channelNumberString = CYIString::FromValue(m_channelNumber);
+
+    return ok;
 }

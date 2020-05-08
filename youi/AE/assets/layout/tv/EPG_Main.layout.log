@@ -1,0 +1,321 @@
+activecomp {
+  name: "EPG_Main"
+  width: 1920
+  height: 1080
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "BG"
+    id: 2378
+    sourceid: 2612
+    transform {
+      anchorPoint {
+        x: 960
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.9
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Main-Epg"
+    id: 2379
+    sourceid: 2393
+    transform {
+      anchorPoint {
+        x: 960
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 0.915651
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1041.9351
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Main-Epg-Placeholder"
+    id: 2380
+    sourceid: 2410
+    transform {
+      anchorPoint {
+        x: 960
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1111
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Main-ChannelListings"
+    id: 2381
+    sourceid: 3164
+    transform {
+      anchorPoint {
+        x: 960
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Main-OnNowListings"
+    id: 2382
+    sourceid: 3264
+    transform {
+      anchorPoint {
+        x: 960
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1041.9351
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "SideMenu-Button"
+    id: 2383
+    sourceid: 2456
+    transform {
+      anchorPoint {
+        x: 81.5
+        y: 507.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 81.5
+        y: 572.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "SideMenu-root"
+    id: 2384
+    sourceid: 2570
+    transform {
+      anchorPoint {
+        x: 200
+        y: 507.5
+        z: 0
+      }
+      scale {
+        x: 0.75
+        y: 0.655
+        z: 1
+      }
+      position {
+        x: -166
+        y: 404.41251
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "scale-mode"
+    value: "fit"
+  }
+  childtemplates: "EPG_Main-Epg"
+  childtemplates: "EPG_Main-Epg-Placeholder"
+  childtemplates: "EPG_Main-ChannelListings"
+  childtemplates: "EPG_Main-OnNowListings"
+  childtemplates: "EPG_SideMenu-Button"
+  childtemplates: "EPG_SideMenu-root"
+}
+sources {
+  uid: 2612
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  width: 1920
+  height: 1080
+  copy_source: false
+}
+sources {
+  uid: 2393
+  srctype: AE_COMP_SRC
+  name: "EPG_Main-Epg.layout"
+  width: 1920
+  height: 1080
+  copy_source: true
+}
+sources {
+  uid: 2410
+  srctype: AE_COMP_SRC
+  name: "EPG_Main-Epg-Placeholder.layout"
+  width: 1920
+  height: 1080
+  copy_source: true
+}
+sources {
+  uid: 3164
+  srctype: AE_COMP_SRC
+  name: "EPG_Main-ChannelListings.layout"
+  width: 1920
+  height: 1080
+  copy_source: true
+}
+sources {
+  uid: 3264
+  srctype: AE_COMP_SRC
+  name: "EPG_Main-OnNowListings.layout"
+  width: 1920
+  height: 1080
+  copy_source: true
+}
+sources {
+  uid: 2456
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-Button.layout"
+  width: 163
+  height: 1015
+  copy_source: true
+}
+sources {
+  uid: 2570
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-root.layout"
+  width: 400
+  height: 1015
+  copy_source: true
+}

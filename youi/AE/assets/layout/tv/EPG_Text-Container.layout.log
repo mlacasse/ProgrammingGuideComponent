@@ -1,0 +1,106 @@
+activecomp {
+  name: "EPG_Text-Container"
+  width: 650
+  height: 130
+  defaultcameradistance: 902.77777
+  layer {
+    name: "Scheduled-Name"
+    id: 2684
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 1.0559998
+        y: 8.8797655
+        z: 0
+      }
+      scale {
+        x: 0.98431134
+        y: 0.98431134
+        z: 1
+      }
+      position {
+        x: 10.25
+        y: 64.5478
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_LEFT
+      fontSize: 24
+      fontColor {
+        alpha: 1
+        red: 1
+        green: 1
+        blue: 1
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 389
+      boundsHeight: 52
+      isLabel: true
+      text: ""
+      multiline: true
+      ellipsis: true
+      isAllCaps: false
+    }
+    classname: "CYISDFAtlasTextSceneNode"
+    properties {
+      key: "text-overflow"
+      value: "ellipsis"
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "gravity"
+    value: "left"
+  }
+  properties {
+    key: "padding-left"
+    value: "10"
+  }
+  properties {
+    key: "padding-right"
+    value: "10"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "width"
+    value: "fit-content"
+  }
+}
+sources {
+  uid: 1
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}

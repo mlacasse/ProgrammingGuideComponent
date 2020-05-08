@@ -1,0 +1,590 @@
+activecomp {
+  name: "EPG_Preview-Asset"
+  width: 1270
+  height: 240
+  defaultcameradistance: 1763.8889
+  layer {
+    name: "Scaler"
+    id: 2974
+    sourceid: 3139
+    transform {
+      anchorPoint {
+        x: 635
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 0.54
+        z: 1
+      }
+      position {
+        x: 635
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "BG"
+    id: 2975
+    sourceid: 3065
+    transform {
+      anchorPoint {
+        x: 635
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 635
+        y: -260
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderBottom"
+    id: 2976
+    sourceid: 3067
+    transform {
+      anchorPoint {
+        x: 635
+        y: 0.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 635
+        y: 129.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.3
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderTop"
+    id: 2977
+    sourceid: 3069
+    transform {
+      anchorPoint {
+        x: 635
+        y: 0.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 635
+        y: 0.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.3
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Preview-Details-Text-Container"
+    id: 2978
+    sourceid: 3074
+    transform {
+      anchorPoint {
+        x: 425.5
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 0.55
+        z: 1
+      }
+      position {
+        x: 794
+        y: 9
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Preview-Contents"
+    id: 2979
+    sourceid: 2986
+    transform {
+      anchorPoint {
+        x: 545
+        y: 65.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 725
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Image"
+    id: 2980
+    sourceid: 2096
+    transform {
+      anchorPoint {
+        x: 0
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 0.59
+        y: 0.59
+        z: 1
+      }
+      position {
+        x: 0
+        y: 0.51
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderRight-Focus"
+    id: 2981
+    sourceid: 3131
+    transform {
+      anchorPoint {
+        x: 3
+        y: 120
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 0.01
+        z: 1
+      }
+      position {
+        x: 1275
+        y: 120
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderLeft-Focus"
+    id: 2982
+    sourceid: 3129
+    transform {
+      anchorPoint {
+        x: 3
+        y: 120
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 0.01
+        z: 1
+      }
+      position {
+        x: -9
+        y: 120
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderBottom-Focus"
+    id: 2983
+    sourceid: 3073
+    transform {
+      anchorPoint {
+        x: 629
+        y: 3
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 635
+        y: 125
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderTop-Focus"
+    id: 2984
+    sourceid: 3071
+    transform {
+      anchorPoint {
+        x: 629
+        y: 3
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 635
+        y: -9
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  classname: "CYIPushButtonView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "15"
+  }
+  properties {
+    key: "gravity"
+    value: "top"
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "clip"
+    value: "false"
+  }
+  properties {
+    key: "time-interpolator"
+    value: "CYIInterpolateLinear"
+  }
+  properties {
+    key: "componentSubtype"
+    value: "push"
+  }
+  properties {
+    key: "componentType"
+    value: "button"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+  childtemplates: "EPG_Preview-Details-Text-Container"
+  childtemplates: "EPG_Preview-Contents"
+  childtemplates: "EPG_Image"
+}
+sources {
+  uid: 3139
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.57867646217346191
+    green: 0.57867646217346191
+    blue: 0.57867646217346191
+  }
+  width: 1270
+  height: 240
+  copy_source: false
+}
+sources {
+  uid: 3065
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.074509806931018829
+    green: 0.15294118225574493
+    blue: 0.20000000298023224
+  }
+  width: 1270
+  height: 240
+  copy_source: false
+}
+sources {
+  uid: 3067
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.501960813999176
+    green: 0.501960813999176
+    blue: 0.501960813999176
+  }
+  width: 1270
+  height: 1
+  copy_source: false
+}
+sources {
+  uid: 3069
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.501960813999176
+    green: 0.501960813999176
+    blue: 0.501960813999176
+  }
+  width: 1270
+  height: 1
+  copy_source: false
+}
+sources {
+  uid: 3074
+  srctype: AE_COMP_SRC
+  name: "EPG_Preview-Details-Text-Container.layout"
+  width: 851
+  height: 222
+  copy_source: true
+}
+sources {
+  uid: 2986
+  srctype: AE_COMP_SRC
+  name: "EPG_Preview-Contents.layout"
+  width: 1090
+  height: 131
+  copy_source: true
+}
+sources {
+  uid: 2096
+  srctype: AE_COMP_SRC
+  name: "EPG_Image.layout"
+  width: 297
+  height: 222
+  copy_source: true
+}
+sources {
+  uid: 3131
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 6
+  height: 240
+  copy_source: false
+}
+sources {
+  uid: 3129
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 6
+  height: 240
+  copy_source: false
+}
+sources {
+  uid: 3073
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 1258
+  height: 6
+  copy_source: false
+}
+sources {
+  uid: 3071
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0.62352943420410156
+    blue: 0.85882353782653809
+  }
+  width: 1258
+  height: 6
+  copy_source: false
+}

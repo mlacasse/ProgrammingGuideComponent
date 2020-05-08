@@ -1,0 +1,225 @@
+activecomp {
+  name: "EPG_TEST"
+  width: 1920
+  height: 1080
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "Favouriteslot-root"
+    id: 2667
+    sourceid: 2072
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 736
+        y: 513.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Favouriteslot-root"
+    id: 2668
+    sourceid: 2072
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1.676923
+        y: 2.7846155
+        z: 1
+      }
+      position {
+        x: 1612
+        y: 489.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Favouriteslot-root"
+    id: 2669
+    sourceid: 2072
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 736
+        y: 273.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Favouriteslot-root"
+    id: 2670
+    sourceid: 2072
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 0.81538463
+        y: 0.75384611
+        z: 1
+      }
+      position {
+        x: 976
+        y: 529.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Favouriteslot-root"
+    id: 2671
+    sourceid: 2072
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1.5538461
+        y: 1.3692307
+        z: 1
+      }
+      position {
+        x: 1252
+        y: 585.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Favouriteslot-root"
+    id: 2672
+    sourceid: 2072
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 436
+        y: 525.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  childtemplates: "EPG_Favouriteslot-root"
+}
+sources {
+  uid: 2072
+  srctype: AE_COMP_SRC
+  name: "EPG_Favouriteslot-root.layout"
+  width: 80
+  height: 130
+  copy_source: true
+}

@@ -1,0 +1,79 @@
+activecomp {
+  name: "EPG_Lane-Placeholder5-root"
+  width: 1920
+  height: 130
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "Lane-Placeholder5"
+    id: 2241
+    sourceid: 2181
+    transform {
+      anchorPoint {
+        x: 855
+        y: 67
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1065
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "width"
+    value: "fit-content"
+  }
+  properties {
+    key: "clip"
+    value: "false"
+  }
+  properties {
+    key: "layout"
+    value: "CYIRowLayout"
+  }
+  properties {
+    key: "padding-left"
+    value: "209"
+  }
+  childtemplates: "EPG_Lane-Placeholder5"
+}
+sources {
+  uid: 2181
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane-Placeholder5.layout"
+  width: 1710
+  height: 134
+  copy_source: true
+}

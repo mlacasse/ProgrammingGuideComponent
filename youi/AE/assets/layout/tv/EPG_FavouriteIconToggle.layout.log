@@ -1,0 +1,122 @@
+activecomp {
+  name: "EPG_FavouriteIconToggle"
+  width: 30
+  height: 30
+  defaultcameradistance: 41.666668
+  layer {
+    name: "Heart-Outline.png"
+    id: 3199
+    sourceid: 1872
+    transform {
+      anchorPoint {
+        x: 33
+        y: 32
+        z: 0
+      }
+      scale {
+        x: 0.34510419
+        y: 0.34510419
+        z: 1
+      }
+      position {
+        x: 15
+        y: 15
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "center"
+    }
+    properties {
+      key: "size-mode"
+      value: "fill"
+    }
+  }
+  layer {
+    name: "Heart.png"
+    id: 3200
+    sourceid: 1873
+    transform {
+      anchorPoint {
+        x: 33
+        y: 32
+        z: 0
+      }
+      scale {
+        x: 0.34510419
+        y: 0.34510419
+        z: 1
+      }
+      position {
+        x: 15
+        y: 15
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "center"
+    }
+    properties {
+      key: "size-mode"
+      value: "fill"
+    }
+  }
+  bgcolor {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+}
+sources {
+  uid: 1872
+  srctype: AE_IMAGE_SRC
+  name: "Heart-Outline.png"
+  width: 66
+  height: 64
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
+sources {
+  uid: 1873
+  srctype: AE_IMAGE_SRC
+  name: "Heart.png"
+  width: 66
+  height: 64
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}

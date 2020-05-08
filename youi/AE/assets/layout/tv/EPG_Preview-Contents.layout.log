@@ -1,0 +1,67 @@
+activecomp {
+  name: "EPG_Preview-Contents"
+  width: 1090
+  height: 131
+  defaultcameradistance: 1513.8889
+  layer {
+    name: "Preview-Text-Container"
+    id: 2986
+    sourceid: 3000
+    transform {
+      anchorPoint {
+        x: 542
+        y: 65.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 545
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.92
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIRowLayout"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "clip"
+    value: "true"
+  }
+  childtemplates: "EPG_Preview-Text-Container"
+}
+sources {
+  uid: 3000
+  srctype: AE_COMP_SRC
+  name: "EPG_Preview-Text-Container.layout"
+  width: 1084
+  height: 131
+  copy_source: true
+}

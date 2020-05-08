@@ -8,37 +8,42 @@
 
 #include <vector>
 
-class EPGAssetModel;
+#include "EPGAssetModel.h"
 
 class EPGChannelModel
 {
 public:
-    EPGChannelModel(bool isFavorite, uint32_t channelNumber, CYIString channelId, CYIString callSign, CYIString name, CYIUrl imageUrl);
-    virtual ~EPGChannelModel();
+    EPGChannelModel();
+    virtual ~EPGChannelModel() = default;
+
+    bool Init(const folly::dynamic &value);
 
     bool IsFavorite() { return m_isFavorite; }
+    void SetFavorite(bool state) { m_isFavorite = state; }
 
-    uint32_t GetChannelNumber() { return m_channelNumber; }
+    uint32_t GetChannelNumber() const { return m_channelNumber; }
+    const CYIString &GetChannelNumberString() const { return m_channelNumberString; }
+    const CYIString &GetChannelId() const { return m_channelId; }
+    const CYIString &GetCallSign() const { return m_callSign; }
+    const CYIString &GetName() const { return m_name; }
 
-    const CYIString GetChannelId() const { return m_channelId; }
-    const CYIString GetCallSign() const { return m_callSign; }
-    const CYIString GetName() const { return m_name; }
+    const CYIUrl &GetDefaultImageUrl() const { return m_defaultImageUrl; }
+    const CYIUrl &GetImageUrl() const { return m_imageUrl; }
 
-    const CYIUrl GetImageUrl() const { return m_imageUrl; }
-
-    void SetAssetModels(std::vector<std::shared_ptr<EPGAssetModel> > assets) { m_assets = assets; };
-    const std::vector<std::shared_ptr<EPGAssetModel> > GetAssetModels() const { return m_assets; };
-    const std::shared_ptr<EPGAssetModel> GetAssetModel(size_t index) const { return m_assets.at(index); }
+    const std::vector<std::shared_ptr<EPGAssetModel>> &GetAssetModels() const { return m_assets; };
+    const std::shared_ptr<EPGAssetModel> &GetModelAtIndex(size_t index) const { return m_assets[index]; }
+    size_t GetAssetCount() const { return m_assets.size(); }
 
 private:
-    bool m_isFavorite;
+    bool m_isFavorite = false;
+    uint32_t m_channelNumber = 0;
 
-    uint32_t m_channelNumber;
-
+    CYIString m_channelNumberString;
     CYIString m_channelId;
     CYIString m_callSign;
     CYIString m_name;
-    
+
+    CYIUrl m_defaultImageUrl;
     CYIUrl m_imageUrl;
 
     std::vector<std::shared_ptr<EPGAssetModel>> m_assets;

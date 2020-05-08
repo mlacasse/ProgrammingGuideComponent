@@ -1,0 +1,186 @@
+activecomp {
+  name: "EPG_SideMenu-FooterGroup"
+  width: 400
+  height: 209
+  defaultcameradistance: 555.55554
+  layer {
+    name: "SideMenu-JumpButton"
+    id: 2494
+    sourceid: 2508
+    transform {
+      anchorPoint {
+        x: 200
+        y: 50
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 200
+        y: 149
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "SideMenu-SortButton"
+    id: 2495
+    sourceid: 2595
+    transform {
+      anchorPoint {
+        x: 200
+        y: 50
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 200
+        y: 54
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Footer-Divider"
+    id: 2496
+    sourceid: 2665
+    transform {
+      anchorPoint {
+        x: 200
+        y: 3
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 200
+        y: 2.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.08
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  classname: "CYIScrollingView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIColumnLayout"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "horizontal-scroll"
+    value: "false"
+  }
+  properties {
+    key: "vertical-scroll"
+    value: "true"
+  }
+  properties {
+    key: "componentSubtype"
+    value: "scrolling"
+  }
+  properties {
+    key: "padding-top"
+    value: "65"
+  }
+  properties {
+    key: "padding-bottom"
+    value: "209"
+  }
+  childtemplates: "EPG_SideMenu-JumpButton"
+  childtemplates: "EPG_SideMenu-SortButton"
+}
+sources {
+  uid: 2508
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-JumpButton.layout"
+  width: 400
+  height: 100
+  copy_source: true
+}
+sources {
+  uid: 2595
+  srctype: AE_COMP_SRC
+  name: "EPG_SideMenu-SortButton.layout"
+  width: 400
+  height: 100
+  copy_source: true
+}
+sources {
+  uid: 2665
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 1
+    green: 1
+    blue: 1
+  }
+  width: 400
+  height: 6
+  copy_source: false
+}

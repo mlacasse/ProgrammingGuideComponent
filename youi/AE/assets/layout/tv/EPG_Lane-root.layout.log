@@ -1,0 +1,282 @@
+activecomp {
+  name: "EPG_Lane-root"
+  width: 1920
+  height: 130
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "Lane-Gradient.png"
+    id: 2253
+    sourceid: 1874
+    transform {
+      anchorPoint {
+        x: 960
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 0.99583334
+        y: 1
+        z: 1
+      }
+      position {
+        x: 964
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "borderLeft"
+    id: 2254
+    sourceid: 2637
+    transform {
+      anchorPoint {
+        x: 0.5
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 209.5
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+    properties {
+      key: "height"
+      value: "fill-parent"
+    }
+    properties {
+      key: "layoutable"
+      value: "false"
+    }
+  }
+  layer {
+    name: "Lane"
+    id: 2255
+    sourceid: 2110
+    transform {
+      anchorPoint {
+        x: 855
+        y: 67
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1065
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "Channelslot-root"
+    id: 2256
+    sourceid: 1923
+    transform {
+      anchorPoint {
+        x: 65
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 145
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+  }
+  layer {
+    name: "Favouriteslot-root"
+    id: 2257
+    sourceid: 2072
+    transform {
+      anchorPoint {
+        x: 40
+        y: 65
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 39.975
+        y: 65
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    properties {
+      key: "item-gravity"
+      value: "left"
+    }
+  }
+  classname: "EPGLaneView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "width"
+    value: "fit-content"
+  }
+  properties {
+    key: "clip"
+    value: "false"
+  }
+  properties {
+    key: "layout"
+    value: "CYIRowLayout"
+  }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
+  }
+  childtemplates: "EPG_Lane"
+  childtemplates: "EPG_Channelslot-root"
+  childtemplates: "EPG_Favouriteslot-root"
+}
+sources {
+  uid: 1874
+  srctype: AE_IMAGE_SRC
+  name: "Lane-Gradient.png"
+  width: 1920
+  height: 130
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
+sources {
+  uid: 2637
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 1
+  height: 130
+  copy_source: false
+}
+sources {
+  uid: 2110
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane.layout"
+  width: 1710
+  height: 134
+  copy_source: true
+}
+sources {
+  uid: 1923
+  srctype: AE_COMP_SRC
+  name: "EPG_Channelslot-root.layout"
+  width: 130
+  height: 130
+  copy_source: true
+}
+sources {
+  uid: 2072
+  srctype: AE_COMP_SRC
+  name: "EPG_Favouriteslot-root.layout"
+  width: 80
+  height: 130
+  copy_source: true
+}

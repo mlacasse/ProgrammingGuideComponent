@@ -1,0 +1,64 @@
+activecomp {
+  name: "EPG_Time-List-Item-Placeholder"
+  width: 650
+  height: 65
+  defaultcameradistance: 902.77777
+  layer {
+    name: "placeholder"
+    id: 2720
+    sourceid: 2652
+    transform {
+      anchorPoint {
+        x: 50
+        y: 10
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 50
+        y: 32.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.6
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  classname: "CYIActivityIndicatorView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentType"
+    value: "loader"
+  }
+}
+sources {
+  uid: 2652
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0.50196099281311035
+    green: 0.50196099281311035
+    blue: 0.50196099281311035
+  }
+  width: 100
+  height: 20
+  copy_source: false
+}

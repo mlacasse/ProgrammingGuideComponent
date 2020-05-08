@@ -1,0 +1,102 @@
+activecomp {
+  name: "EPG_SideMenu-Button"
+  width: 163
+  height: 1015
+  defaultcameradistance: 226.38889
+  layer {
+    name: "SideMenuIcon.png"
+    id: 2456
+    sourceid: 1876
+    transform {
+      anchorPoint {
+        x: 38
+        y: 38
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 116
+        y: 50
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "SideMenuIcon-Focus.png"
+    id: 2457
+    sourceid: 1875
+    transform {
+      anchorPoint {
+        x: 38
+        y: 38
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 116
+        y: 50
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+}
+sources {
+  uid: 1876
+  srctype: AE_IMAGE_SRC
+  name: "SideMenuIcon.png"
+  width: 76
+  height: 76
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
+sources {
+  uid: 1875
+  srctype: AE_IMAGE_SRC
+  name: "SideMenuIcon-Focus.png"
+  width: 76
+  height: 76
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}

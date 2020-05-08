@@ -1,22 +1,69 @@
-#include "epg/model/EPGAssetModel.h"
+#include "EPGAssetModel.h"
 
-#include <logging/YiLogger.h>
+#include <asset/YiAssetTextureBase.h>
+#include <utility/FileUtilities.h>
+#include <utility/FollyDynamicUtilities.h>
+#include <utility/InitFromValue.h>
 #include <utility/YiString.h>
 
-#define LOG_TAG "EPGAssetModel"
+EPGAssetModel::EPGAssetModel()
+{}
 
-EPGAssetModel::EPGAssetModel(bool isRestartable, int64_t duration, int64_t episodeNumber, int64_t seasonNumber, CYIString parentalRating, CYIString episodeTitle, CYIString description, CYIString resourceId, CYIString title, CYIString startTime, CYIString endTime)
-    : m_isRestartable(isRestartable)
-    , m_duration(duration)
-    , m_episodeNumber(episodeNumber)
-    , m_seasonNumber(seasonNumber)
-    , m_parentalRating(parentalRating)
-    , m_episodeTitle(episodeTitle)
-    , m_description(description)
-    , m_resourceId(resourceId)
-    , m_title(title)
-    , m_startTime(startTime)
-    , m_endTime(endTime)
+bool EPGAssetModel::Init(const folly::dynamic &value)
 {
-    YI_LOGD(LOG_TAG, "Asset: %s %lld %lld %lld %s %s %s %s %s %s %s", isRestartable ? "true" : "false", duration, episodeNumber, seasonNumber, parentalRating.GetData(), episodeTitle.GetData(), description.GetData(), resourceId.GetData(), title.GetData(), startTime.GetData(), endTime.GetData());
+    bool ok = true;
+
+    ok = ok && InitFromMandatoryField(m_resourceId, value, "resourceId");
+    ok = ok && InitFromMandatoryField(m_title, value, "title");
+    ok = ok && InitFromOptionalField(m_episodeTitle, value, "episodeTitle");
+    ok = ok && InitFromOptionalField(m_episodeNumber, value, "episodeNumber");
+    ok = ok && InitFromOptionalField(m_seasonNumber, value, "seasonNumber");
+    ok = ok && InitFromOptionalField(m_description, value, "description");
+    ok = ok && InitFromOptionalField(m_parentalRating, value, "parentalRating");
+
+    if (value["consumables"].isArray())
+    {
+        folly::dynamic consumable = value["consumables"][0];
+
+        ok = ok && InitFromMandatoryField(m_startTime, consumable, "startTime");
+        ok = ok && InitFromMandatoryField(m_endTime, consumable, "endTime");
+        ok = ok && InitFromMandatoryField(m_programChannelId, consumable, "programChannelId");
+        ok = ok && InitFromOptionalField(m_duration, consumable, "duration");
+
+        if (consumable["augmentation"].isObject())
+        {
+            folly::dynamic augmentation = consumable["augmentation"];
+
+            if (augmentation["constraints"].isObject())
+            {
+                folly::dynamic constraints = augmentation["constraints"];
+
+                ok = ok && InitFromOptionalField(m_isFastForwardDisabled, constraints, "isFastForwardDisabled");
+                ok = ok && InitFromOptionalField(m_isRestartable, constraints, "isRestart");
+                ok = ok && InitFromOptionalField(m_isExtendable, constraints, "isExtendable");
+                ok = ok && InitFromOptionalField(m_isRecordable, constraints, "isRecordable");
+                ok = ok && InitFromOptionalField(m_isLookback, constraints, "isLookback");
+                ok = ok && InitFromOptionalField(m_isPlayable, constraints, "isPlayable");
+                ok = ok && InitFromOptionalField(m_isDAI, constraints, "isDAI");
+            }
+        }
+    }
+
+    if (value["images"].isArray())  // Optional
+    {
+        for (auto &elem : value["images"])
+        {
+            if (elem["imageUrl"].isString())
+            {
+                m_imageUrls.push_back(CYIUrl(GetModifiedResourceFilePath(elem["imageUrl"].asString(), &CYIAssetTextureBase::GetClassTypeInfo())));
+            }
+
+            if (elem["defaultImageUrl"].isString())
+            {
+                m_imageUrls.push_back(CYIUrl(GetModifiedResourceFilePath(elem["defaultImageUrl"].asString(), &CYIAssetTextureBase::GetClassTypeInfo())));
+            }
+        }
+    }
+
+    return ok;
 }

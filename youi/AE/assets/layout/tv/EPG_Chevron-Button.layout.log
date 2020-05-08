@@ -1,0 +1,66 @@
+activecomp {
+  name: "EPG_Chevron-Button"
+  width: 28
+  height: 28
+  defaultcameradistance: 38.888889
+  layer {
+    name: "chevronRight.png"
+    id: 3659
+    sourceid: 1869
+    transform {
+      anchorPoint {
+        x: 14
+        y: 14
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 14
+        y: 14
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0.6
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  classname: "CYIPushButtonView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentSubtype"
+    value: "push"
+  }
+  properties {
+    key: "componentType"
+    value: "button"
+  }
+}
+sources {
+  uid: 1869
+  srctype: AE_IMAGE_SRC
+  name: "chevronRight.png"
+  width: 28
+  height: 28
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}

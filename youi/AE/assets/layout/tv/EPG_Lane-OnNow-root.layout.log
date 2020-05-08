@@ -1,0 +1,71 @@
+activecomp {
+  name: "EPG_Lane-OnNow-root"
+  width: 1701
+  height: 362
+  defaultcameradistance: 2362.5
+  layer {
+    name: "Lane-OnNow"
+    id: 3347
+    sourceid: 3290
+    transform {
+      anchorPoint {
+        x: 850.5
+        y: 181
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 850.5
+        y: 181
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "layout"
+    value: "CYIStackLayout"
+  }
+  properties {
+    key: "height"
+    value: "fit-content"
+  }
+  properties {
+    key: "time-interpolator"
+    value: "CYIInterpolateLinear"
+  }
+  properties {
+    key: "clip"
+    value: "false"
+  }
+  childtemplates: "EPG_Lane-OnNow"
+}
+sources {
+  uid: 3290
+  srctype: AE_COMP_SRC
+  name: "EPG_Lane-OnNow.layout"
+  width: 1701
+  height: 362
+  copy_source: true
+}

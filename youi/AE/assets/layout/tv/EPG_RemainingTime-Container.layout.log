@@ -1,0 +1,149 @@
+activecomp {
+  name: "EPG_RemainingTime-Container"
+  width: 318
+  height: 30
+  defaultcameradistance: 441.66666
+  layer {
+    name: "Text-RemainingTime"
+    id: 3145
+    sourceid: -1
+    transform {
+      anchorPoint {
+        x: 240.35791
+        y: 10.639999
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 296.35791
+        y: 15.889999
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    textinfo {
+      justification: AE_TEXT_RIGHT
+      fontSize: 26
+      fontColor {
+        alpha: 1
+        red: 0.92156994342803955
+        green: 0.92156994342803955
+        blue: 0.92156994342803955
+      }
+      fontName: "ATTAleckSans-Regular"
+      isPointText: false
+      boundsWidth: 242
+      boundsHeight: 25
+      isLabel: true
+      text: ""
+      multiline: true
+      isAllCaps: false
+    }
+    properties {
+      key: "text-placeholder"
+      value: "true"
+    }
+    properties {
+      key: "item-gravity"
+      value: "right"
+    }
+    properties {
+      key: "width"
+      value: "fill-parent"
+    }
+  }
+  layer {
+    name: "circle-on-now@2x.png"
+    id: 3146
+    sourceid: 3162
+    transform {
+      anchorPoint {
+        x: 10
+        y: 10
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 146.75
+        y: 16.75
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "spacing"
+    value: "5"
+  }
+  properties {
+    key: "layout"
+    value: "CYIRowLayout"
+  }
+  properties {
+    key: "gravity"
+    value: "right"
+  }
+  properties {
+    key: "padding-left"
+    value: "30"
+  }
+  properties {
+    key: "padding-right"
+    value: "30"
+  }
+}
+sources {
+  uid: 1
+  srctype: AE_FONT_SRC
+  name: "ATTAleckSans-Regular"
+  copy_source: true
+  file_name: "yi_ATT Aleck Sans-Regular.ttf"
+  style_name: "Regular"
+}
+sources {
+  uid: 3162
+  srctype: AE_IMAGE_SRC
+  name: "circle-on-now@2x.png"
+  width: 20
+  height: 20
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}

@@ -1,0 +1,145 @@
+activecomp {
+  name: "EPG_Main-OnNowListings"
+  width: 1920
+  height: 1080
+  defaultcameradistance: 2666.6667
+  layer {
+    name: "BG"
+    id: 3264
+    sourceid: 3176
+    transform {
+      anchorPoint {
+        x: 960
+        y: 540
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 960
+        y: 540
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Preview-OnNow-Content-List"
+    id: 3265
+    sourceid: 3278
+    transform {
+      anchorPoint {
+        x: 850.5
+        y: 395.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1069.5
+        y: 684.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "OnNow-Header-Text"
+    id: 3266
+    sourceid: 3626
+    transform {
+      anchorPoint {
+        x: 850.5
+        y: 37.5
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 1069.5
+        y: 250.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  childtemplates: "EPG_Preview-OnNow-Content-List"
+  childtemplates: "EPG_OnNow-Header-Text"
+}
+sources {
+  uid: 3176
+  srctype: AE_SOLID_SRC
+  color {
+    alpha: 1
+    red: 0
+    green: 0
+    blue: 0
+  }
+  width: 1920
+  height: 1080
+  copy_source: false
+}
+sources {
+  uid: 3278
+  srctype: AE_COMP_SRC
+  name: "EPG_Preview-OnNow-Content-List.layout"
+  width: 1701
+  height: 791
+  copy_source: true
+}
+sources {
+  uid: 3626
+  srctype: AE_COMP_SRC
+  name: "EPG_OnNow-Header-Text.layout"
+  width: 1701
+  height: 75
+  copy_source: true
+}

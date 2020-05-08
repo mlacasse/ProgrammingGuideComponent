@@ -1,10 +1,9 @@
 #ifndef EPG_MODEL_H
 #define EPG_MODEL_H
 
+#include <signal/YiSignal.h>
 #include <utility/YiDateTime.h>
-#include <network/YiUrl.h>
 
-#include <map>
 #include <vector>
 
 class EPGAssetModel;
@@ -16,13 +15,24 @@ public:
     EPGModel();
     virtual ~EPGModel();
 
-    void SetModel(std::vector<std::shared_ptr<EPGChannelModel> > channelData) { m_channelData = channelData; }
+    void InitTime(CYIDateTime startTime, int32_t durationInMinutes);
+    void SetChannelModels(std::vector<std::shared_ptr<EPGChannelModel>> channelData);
+    void PrependChannelModels(std::vector<std::shared_ptr<EPGChannelModel>> channelData);
+    void AppendChannelModels(std::vector<std::shared_ptr<EPGChannelModel>> channelData);
 
     const std::shared_ptr<EPGChannelModel> GetChannelModel(const CYIString &channelId);
     const std::vector<std::shared_ptr<EPGChannelModel> > GetChannelModels() const { return m_channelData; }
+    
+    const CYIDateTime &GetStartTime() const { return m_startTime; }
+    const CYIDateTime &GetEndTime() const { return m_endTime; }
+
+    CYISignal<size_t> ChannelAddedAtIndex;
 
 private:
     std::vector<std::shared_ptr<EPGChannelModel> > m_channelData;
+    
+    CYIDateTime m_startTime;
+    CYIDateTime m_endTime;
 };
 
 #endif

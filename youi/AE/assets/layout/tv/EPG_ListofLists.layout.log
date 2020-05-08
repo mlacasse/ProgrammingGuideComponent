@@ -1,0 +1,49 @@
+activecomp {
+  name: "EPG_ListofLists"
+  width: 1920
+  height: 1015
+  defaultcameradistance: 2666.6667
+  classname: "EPGListView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentSubtype"
+    value: "streaming"
+  }
+  properties {
+    key: "componentType"
+    value: "list"
+  }
+  properties {
+    key: "layout"
+    value: "CYIColumnLayout"
+  }
+  properties {
+    key: "spacing"
+    value: "0"
+  }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
+  }
+  properties {
+    key: "horizontal-scroll"
+    value: "false"
+  }
+  properties {
+    key: "vertical-scroll"
+    value: "true"
+  }
+  properties {
+    key: "vertical-begin-magnet-offset"
+    value: "130"
+  }
+  properties {
+    key: "padding-bottom"
+    value: "250"
+  }
+}

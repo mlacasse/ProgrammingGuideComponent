@@ -1,0 +1,89 @@
+activecomp {
+  name: "EPG_Chevron-ButtonGroup"
+  width: 78
+  height: 75
+  defaultcameradistance: 108.33334
+  layer {
+    name: "Chevron-Button"
+    id: 3643
+    sourceid: 3659
+    transform {
+      anchorPoint {
+        x: 14
+        y: 14
+        z: 0
+      }
+      scale {
+        x: 1.2028571
+        y: 1.2921427
+        z: 1
+      }
+      position {
+        x: 63.25
+        y: 36.625
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: -90
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "Chevron-Button"
+    id: 3644
+    sourceid: 3659
+    transform {
+      anchorPoint {
+        x: 14
+        y: 14
+        z: 0
+      }
+      scale {
+        x: 1.2028571
+        y: 1.2921427
+        z: 1
+      }
+      position {
+        x: 14.25
+        y: 37.5
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 90
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  childtemplates: "EPG_Chevron-Button"
+}
+sources {
+  uid: 3659
+  srctype: AE_COMP_SRC
+  name: "EPG_Chevron-Button.layout"
+  width: 28
+  height: 28
+  copy_source: true
+}

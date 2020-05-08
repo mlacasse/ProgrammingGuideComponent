@@ -1,0 +1,102 @@
+activecomp {
+  name: "EPG_Details-root"
+  width: 1762
+  height: 222
+  defaultcameradistance: 2447.2222
+  layer {
+    name: "Details-resize"
+    id: 2012
+    sourceid: 2000
+    transform {
+      anchorPoint {
+        x: 881
+        y: 111
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 881
+        y: 111
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+    parentid: 2013
+  }
+  layer {
+    name: "SizingAnchor"
+    id: 2013
+    sourceid: 2608
+    transform {
+      anchorPoint {
+        x: 0
+        y: 0
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 0
+        y: 0
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  classname: "EPGDetailsView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
+  }
+  childtemplates: "EPG_Details-resize"
+}
+sources {
+  uid: 2000
+  srctype: AE_COMP_SRC
+  name: "EPG_Details-resize.layout"
+  width: 1762
+  height: 222
+  copy_source: true
+}
+sources {
+  uid: 2608
+  srctype: AE_NULL_SRC
+  width: 100
+  height: 100
+  copy_source: false
+}

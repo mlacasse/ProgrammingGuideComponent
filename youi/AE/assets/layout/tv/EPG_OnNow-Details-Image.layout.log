@@ -1,0 +1,130 @@
+activecomp {
+  name: "EPG_OnNow-Details-Image"
+  width: 644
+  height: 362
+  defaultcameradistance: 894.44446
+  layer {
+    name: "default-L.png"
+    id: 3401
+    sourceid: 3415
+    transform {
+      anchorPoint {
+        x: 322
+        y: 181
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 322
+        y: 181
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 1
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "ImageNode-Outgoing"
+    id: 3402
+    sourceid: 3415
+    transform {
+      anchorPoint {
+        x: 322
+        y: 181
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 321.5
+        y: 181
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  layer {
+    name: "ImageNode"
+    id: 3403
+    sourceid: 3415
+    transform {
+      anchorPoint {
+        x: 322
+        y: 181
+        z: 0
+      }
+      scale {
+        x: 1
+        y: 1
+        z: 1
+      }
+      position {
+        x: 321.5
+        y: 181
+        z: 0
+      }
+      orientation {
+        x: 0
+        y: 0
+        z: 0
+      }
+      rotationX: 0
+      rotationY: 0
+      rotationZ: 0
+      opacity: 0
+    }
+    acceptsshadows: true
+    acceptslights: true
+    castsshadows: false
+  }
+  classname: "CYIImageView"
+  bgcolor {
+    alpha: 1
+    red: 0.17254901960784313
+    green: 0.17254901960784313
+    blue: 0.17254901960784313
+  }
+  properties {
+    key: "componentType"
+    value: "image"
+  }
+}
+sources {
+  uid: 3415
+  srctype: AE_IMAGE_SRC
+  name: "default-L.png"
+  width: 644
+  height: 362
+  numberOfFrames: 1
+  fps: 0
+  loops: 1
+  copy_source: true
+}
