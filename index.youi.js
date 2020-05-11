@@ -10,10 +10,8 @@ const data = require('./schedules.json');
 
 export default class YiReactApp extends Component {
   render() {
-    const startTime = new Date('2020-03-23T16:00:00Z').getTime() / 1000;
-
     return (
-      <ProgrammingGuide schedulesStartTime={startTime} currentChannelIndex={5} schedules={data}/>
+      <ProgrammingGuide schedulesStartTime={'2020-03-23T16:00:00Z'} currentChannelIndex={5} schedules={data}/>
     );
   }
 }

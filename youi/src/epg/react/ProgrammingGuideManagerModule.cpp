@@ -43,8 +43,8 @@ void ProgrammingGuideManagerModule::SetupProperties()
         self.GetSavedProps()->duration = duration;
     });
 
-    YI_RN_DEFINE_PROPERTY("schedulesStartTime", [](ShadowProgrammingGuideView &self, double schedulesStartTime) {
-        self.GetSavedProps()->startTime = CYIDateTime(schedulesStartTime);
+    YI_RN_DEFINE_PROPERTY("schedulesStartTime", [](ShadowProgrammingGuideView &self, CYIDateTime schedulesStartTime) {
+        self.GetSavedProps()->startTime = schedulesStartTime;
     });
 
     YI_RN_DEFINE_PROPERTY("currentChannelIndex", [](ShadowProgrammingGuideView &self, std::map<CYIString, CYIString> currentChannelIndex) {

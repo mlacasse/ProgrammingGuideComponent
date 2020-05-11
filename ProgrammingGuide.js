@@ -93,9 +93,9 @@ class ProgrammingGuide extends Component {
     }
   };
 
-  _reset = (schedulesStartTime) => {
-    if (this.shadowRef.current && schedulesStartTime instanceof Number) {
-      const startTime = schedulesStartTime / 1000;
+  _reset = (schedulesStartTimeMs) => {
+    if (this.shadowRef.current && schedulesStartTimeMs instanceof Number) {
+      const startTime = schedulesStartTimeMs / 1000;
 
       UIManager.dispatchViewManagerCommand(
         findNodeHandle(this.shadowRef.current),
