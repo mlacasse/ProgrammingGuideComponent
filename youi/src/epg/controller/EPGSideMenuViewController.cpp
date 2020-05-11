@@ -1,6 +1,7 @@
 #include "EPGSideMenuViewController.h"
 
 #include "epg/list/EPGFilterListAdapter.h"
+#include "epg/model/EPGFilterModel.h"
 #include "epg/utility/NodeUtilities.h"
 
 #include <view/YiListView.h>
@@ -31,7 +32,8 @@ void EPGSideMenuViewController::Init(CYISceneView *pView)
     m_pFilterListView = Utility::GetNode<CYIListView>(m_pView, "SideMenu-FilterList");
     auto pAdapter = std::make_unique<EPGFilterListAdapter>(m_pFilterListView);
     m_pFilterListAdapter = pAdapter.get();
-
+    m_pFilterListAdapter->FilterEnabled.Connect(*this, &EPGSideMenuViewController::OnFilterEnabled);
+    
     m_pFilterListView->SetAdapter(std::move(pAdapter));
     
     m_pView->DescendantGainedFocus.Connect(*this, &EPGSideMenuViewController::OnDescendantGainedFocus);
@@ -44,14 +46,15 @@ void EPGSideMenuViewController::Init(CYISceneView *pView)
     pDateSelectorButton->SetText("Jump To Day");
 }
 
-void EPGSideMenuViewController::Populate(bool forceReset)
+void EPGSideMenuViewController::SetFilters(std::vector<EPGFilterModel> &&filters)
 {
-    if (!forceReset && m_pFilterListAdapter->GetItemsCount() > 0)
-    {
-        return;
-    }
+    m_pFilterListAdapter->SetFilters(std::move(filters));
+}
 
-    m_pFilterListAdapter->BuildElements();
+void EPGSideMenuViewController::OnFilterEnabled(const EPGFilterModel &filter)
+{
+    FilterEnabled.Emit(filter);
+    m_showHideToggleController.ToggleOff();
 }
 
 void EPGSideMenuViewController::OnSortButtonPressed()

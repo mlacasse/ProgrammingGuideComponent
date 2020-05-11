@@ -4,6 +4,8 @@
 #include <import/YiViewTemplate.h>
 #include <streamer/YiViewAdapter.h>
 
+class EPGFilterModel;
+
 class CYIListView;
 
 struct EPGFilterListElement
@@ -26,10 +28,11 @@ public:
     std::shared_ptr<CYIAssetViewTemplate> GetViewTemplate(size_t index) const override;
     size_t GetItemsCount() const override;
     
+    void SetFilters(std::vector<EPGFilterModel> &&filters);
     void BuildElements();
     void Clear();
 
-    CYISignal<CYIString /*filterText*/> FilterEnabled;
+    CYISignal<const EPGFilterModel &/*filterText*/> FilterEnabled;
 
 protected:
     void PopulateView(size_t index, CYISceneView *pView) override;
@@ -39,7 +42,7 @@ private:
     void SetButtonStateForIndex(int32_t index, bool state);
     
     CYIListView *m_pListView = nullptr;
-    std::vector<EPGFilterListElement> m_listElements;
+    std::vector<EPGFilterModel> m_filters;
     int32_t m_selectedFilterIndex = 0;
 };
 

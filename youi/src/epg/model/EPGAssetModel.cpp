@@ -6,6 +6,13 @@
 #include <utility/InitFromValue.h>
 #include <utility/YiString.h>
 
+// Covers all platforms
+#if !(defined YI_DEBUG)
+#if defined (DEBUG) || defined (_DEBUG) || !(defined (NDEBUG) || defined (_NDEBUG))
+#define YI_DEBUG 1
+#endif
+#endif
+
 EPGAssetModel::EPGAssetModel()
 {}
 
@@ -20,7 +27,8 @@ bool EPGAssetModel::Init(const folly::dynamic &value)
     ok = ok && InitFromOptionalField(m_seasonNumber, value, "seasonNumber");
     ok = ok && InitFromOptionalField(m_description, value, "description");
     ok = ok && InitFromOptionalField(m_parentalRating, value, "parentalRating");
-
+    ok = ok && InitFromOptionalField(m_categories, value, "categories");
+    
     if (value["consumables"].isArray())
     {
         folly::dynamic consumable = value["consumables"][0];
@@ -66,4 +74,16 @@ bool EPGAssetModel::Init(const folly::dynamic &value)
     }
 
     return ok;
+}
+
+bool EPGAssetModel::IsOnNow() const
+{
+    CYIDateTime now(CYIDateTime::GetCurrentDateTime());
+
+#if YI_DEBUG
+    now = m_startTime;
+    now.SetMinute(CYIDateTime::GetCurrentDateTime().GetMinute());
+#endif
+
+    return m_startTime >= now && now <= m_endTime;
 }

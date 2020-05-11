@@ -34,6 +34,7 @@ public:
     
     void SetCurrentTimeMarker(EPGTimeMarkerView *pTimeMarkerView) { m_pCurrentTimeMarker = pTimeMarkerView; };
     void ConstructChannelList(std::shared_ptr<EPGModel> pModel);
+    void ConstructChannelList(const std::vector<std::shared_ptr<EPGChannelModel>> &models);
     void Clear();
 
     void ScrollToHorizontalPosition(float percent, bool emitScrolledSignal, float duration = 0.0f, CYITimeInterpolator *pInterpolator = nullptr);

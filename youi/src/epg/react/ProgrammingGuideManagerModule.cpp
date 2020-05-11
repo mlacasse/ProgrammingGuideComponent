@@ -25,7 +25,13 @@ YI_RN_OVERRIDE_ConfigureCounterpart(ProgrammingGuideManagerModule);
 folly::dynamic ProgrammingGuideManagerModule::GetNativeProps()
 {
     folly::dynamic superProps = IViewManager::GetNativeProps();
-    folly::dynamic props = folly::dynamic::object("duration", "double")("schedulesStartTime", "double")("filters", "array")("sortKeys", "array")("dateSelector", "object")("currentChannelIndex", "object");
+    folly::dynamic props = folly::dynamic::object
+        ("duration", "double")
+        ("schedulesStartTime", "double")
+        ("filters", "array")
+        ("sortKeys", "array")
+        ("dateSelector", "object")
+        ("currentChannelIndex", "object");
     return folly::dynamic::merge(superProps, props);
 }
 
@@ -55,37 +61,12 @@ void ProgrammingGuideManagerModule::SetupProperties()
         }
     });
 
-    YI_RN_DEFINE_PROPERTY("filters", [](ShadowProgrammingGuideView &self,  std::vector<std::map<CYIString, CYIString> > filters) {
-        YI_UNUSED(self);
-
-        for (auto it = filters.begin(); it != filters.end(); it++)
-        {
-            auto label = it->find("label");
-            if (label != it->end())
-            {
-                YI_LOGD(LOG_TAG, "filters %s: %s", label->first.GetData(), label->second.GetData());
-            }
-
-            auto prop = it->find("prop");
-            if (prop != it->end())
-            {
-                YI_LOGD(LOG_TAG, "filters %s: %s", prop->first.GetData(), prop->second.GetData());
-            }
-
-            // Filter rules for properties that are booleans will use 1 or 0 to represent true or false.
-            // Filter rules for properties that are strings will a string, e.g. TVShow, Kids, national.
-            auto match = it->find("match");
-            if (match != it->end())
-            {
-                YI_LOGD(LOG_TAG, "filters %s: %s", match->first.GetData(), match->second.GetData());
-            }
-        }
+    YI_RN_DEFINE_PROPERTY("filters", [](ShadowProgrammingGuideView &self, std::vector<EPGFilterModel> filters) {
+        self.SetFilters(std::move(filters));
     });
 
-    YI_RN_DEFINE_PROPERTY("sortKeys", [](ShadowProgrammingGuideView &self,  std::vector<std::map<CYIString, CYIString> > sortKeys) {
-        YI_UNUSED(self);
-
-        for (auto it = sortKeys.begin(); it != sortKeys.end(); it++)
+    YI_RN_DEFINE_PROPERTY("sortKeys", [](ShadowProgrammingGuideView &self, std::vector<std::map<CYIString, CYIString>> sortKeys) {
+        for (auto it = sortKeys.begin(); it != sortKeys.end(); ++it)
         {
             auto label = it->find("label");
             if (label != it->end())
@@ -108,9 +89,7 @@ void ProgrammingGuideManagerModule::SetupProperties()
         }
     });
 
-    YI_RN_DEFINE_PROPERTY("dateSelector", [](ShadowProgrammingGuideView &self,  std::map<CYIString, CYIString> dateSelector) {
-        YI_UNUSED(self);
-
+    YI_RN_DEFINE_PROPERTY("dateSelector", [](ShadowProgrammingGuideView &self, std::map<CYIString, CYIString> dateSelector) {
         auto label = dateSelector.find("label");
         if (label != dateSelector.end())
         {
@@ -148,14 +127,14 @@ YI_RN_DEFINE_EXPORT_COMMAND(ProgrammingGuideManagerModule, Prepend)
 (ReactComponent *pShadowView, std::vector<std::shared_ptr<EPGChannelModel>> channels)
 {
     auto pView = static_cast<ShadowProgrammingGuideView *>(pShadowView);
-    pView->PrependChannels(std::move(channels));
+    pView->PrependChannels(channels);
 }
 
 YI_RN_DEFINE_EXPORT_COMMAND(ProgrammingGuideManagerModule, Append)
 (ReactComponent *pShadowView, std::vector<std::shared_ptr<EPGChannelModel>> channels)
 {
     auto pView = static_cast<ShadowProgrammingGuideView *>(pShadowView);
-    pView->AppendChannels(std::move(channels));
+    pView->AppendChannels(channels);
 }
 
 YI_RN_DEFINE_EXPORT_COMMAND(ProgrammingGuideManagerModule, SetCurrentChannel)

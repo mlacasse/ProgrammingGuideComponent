@@ -7,6 +7,7 @@
 
 #include "../model/EPGAssetModel.h"
 #include "../model/EPGChannelModel.h"
+#include "../model/EPGFilterModel.h"
 
 namespace yi
 {
@@ -31,5 +32,7 @@ struct ProgrammingGuideProps : public PropTypes
 bool InitFromValue(std::shared_ptr<EPGChannelModel> &pModelOut, const folly::dynamic &value);
 
 bool InitFromValue(std::shared_ptr<EPGAssetModel> &pModelOut, const folly::dynamic &value);
+
+bool InitFromValue(EPGFilterModel &pModelOut, const folly::dynamic &value);
 
 #endif // _PROGRAMMING_GUIDE_PROPS_H

@@ -189,15 +189,21 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     RESOURCE "${YI_PLATFORM_RESOURCES_${YI_PLATFORM_UPPER}}"
 )
 
-source_group("Header Files" FILES ${YI_PROJECT_HEADERS})
-source_group("Source Files" FILES ${YI_PROJECT_SOURCE})
-source_group("Header Files\\App" FILES
+source_group(App                            REGULAR_EXPRESSION "App.*|Version.*")
+source_group(Guide\\Controller              REGULAR_EXPRESSION "epg/controller/.*")
+source_group(Guide\\Model                   REGULAR_EXPRESSION "epg/model/.*")
+source_group(Guide\\View                    REGULAR_EXPRESSION "epg/view/.*")
+source_group(Guide\\List                    REGULAR_EXPRESSION "epg/list/.*")
+source_group(Guide\\React                   REGULAR_EXPRESSION "epg/react/.*")
+source_group(Guide\\Utility                 REGULAR_EXPRESSION "epg/utility/.*")
+
+source_group("You\.i\ SDK" FILES
     ${YI_APP_SOURCE_HEADERS}
     ${YI_NATIVEMODULES_HEADERS}
     ${PLATFORM_SOURCE_HEADERS_${YI_PLATFORM_UPPER}}
     ${PLATFORM_SOURCE_HEADERS_${YI_PLATFORM_UPPER}_${YI_RENDER_TYPE}}
 )
-source_group("Source Files\\App" FILES
+source_group("You\.i\ SDK" FILES
     ${YI_APP_SOURCE_FILES}
     ${YI_NATIVEMODULES_SOURCE}
     ${PLATFORM_SOURCE_FILES_${YI_PLATFORM_UPPER}}

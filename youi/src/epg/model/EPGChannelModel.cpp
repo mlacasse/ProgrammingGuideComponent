@@ -46,3 +46,14 @@ bool EPGChannelModel::Init(const folly::dynamic &value)
 
     return ok;
 }
+
+const std::shared_ptr<EPGAssetModel> EPGChannelModel::GetModelOnNow() const
+{
+    auto itr = std::find_if(m_assets.begin(), m_assets.end(), [](const std::shared_ptr<EPGAssetModel> &asset)
+    {
+        return asset->IsOnNow();
+    });
+
+    return itr != m_assets.end() ? *itr : nullptr;
+}
+

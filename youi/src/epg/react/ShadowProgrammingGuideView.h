@@ -35,10 +35,12 @@ public:
 
     YGSize YogaMeasure(YGNodeRef node, float width, YGMeasureMode widthMode, float height, YGMeasureMode heightMode) const;
 
-    void PrependChannels(std::vector<std::shared_ptr<EPGChannelModel>> models);
-    void AppendChannels(std::vector<std::shared_ptr<EPGChannelModel>> models);
+    void PrependChannels(const std::vector<std::shared_ptr<EPGChannelModel>> &models);
+    void AppendChannels(const std::vector<std::shared_ptr<EPGChannelModel>> &models);
     void ResetChannelFocus();
     void Reset();
+
+    void SetFilters(std::vector<EPGFilterModel> &&filters);
 
 private:
     virtual std::unique_ptr<CYISceneNode> CreateCounterpart(CYISceneManager *pSceneManager) override;

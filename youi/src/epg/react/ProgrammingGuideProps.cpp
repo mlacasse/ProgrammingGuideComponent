@@ -11,3 +11,9 @@ bool InitFromValue(std::shared_ptr<EPGAssetModel> &pModelOut, const folly::dynam
     pModelOut = std::make_shared<EPGAssetModel>();
     return pModelOut->Init(value);
 }
+
+bool InitFromValue(EPGFilterModel &pModelOut, const folly::dynamic &value)
+{
+    pModelOut = EPGFilterModel();
+    return pModelOut.Init(value);
+}

@@ -6,6 +6,7 @@
 #include <signal/YiSignalHandler.h>
 
 class EPGFilterListAdapter;
+class EPGFilterModel;
 
 class CYIListView;
 class CYISceneView;
@@ -17,14 +18,15 @@ public:
     virtual ~EPGSideMenuViewController() = default;
   
     void Init(CYISceneView *pView);
-    void Populate(bool forceReset = false);
+    void SetFilters(std::vector<EPGFilterModel> &&filters);
 
-    CYISignal<const CYIString &> FilterSelected;
+    CYISignal<const EPGFilterModel &> FilterEnabled;
 
 private:
     void OnDescendantGainedFocus();
     void OnDescendantLostFocus();
 
+    void OnFilterEnabled(const EPGFilterModel &filter);
     void OnSortButtonPressed();
     void OnDaySelectorButtonPressed();
 

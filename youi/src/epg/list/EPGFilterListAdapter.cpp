@@ -1,5 +1,6 @@
 #include "EPGFilterListAdapter.h"
 
+#include "epg/model/EPGFilterModel.h"
 #include "epg/utility/NodeUtilities.h"
 
 #include <asset/YiAssetViewTemplate.h>
@@ -23,56 +24,51 @@ std::shared_ptr<CYIAssetViewTemplate> EPGFilterListAdapter::GetViewTemplate(size
 
 size_t EPGFilterListAdapter::GetItemsCount() const
 {
-    return m_listElements.size();
+    return m_filters.size();
 }
 
-void EPGFilterListAdapter::BuildElements()
+void EPGFilterListAdapter::SetFilters(std::vector<EPGFilterModel> &&filters)
 {
     Clear();
     
-    // TEMP DATA
-    m_listElements.emplace_back("All Channels", true);
-    m_listElements.emplace_back("Favorite", false);
-    m_listElements.emplace_back("Movies", false);
-    m_listElements.emplace_back("TV Shows", false);
-    m_listElements.emplace_back("Sports", false);
-    m_listElements.emplace_back("Kids", false);
+    m_filters = std::move(filters);
     
-    m_selectedFilterIndex = 0;
+    auto itr = std::find_if(m_filters.begin(), m_filters.end(), [](const EPGFilterModel &filter) { return filter.IsEnabled(); });
+    if (itr != m_filters.end())
+    {
+        m_selectedFilterIndex = static_cast<int32_t>(std::distance(m_filters.begin(), itr));
+    }
     
-    for (size_t i = 0; i < 6; ++i)
+    for (size_t i = 0; i < m_filters.size(); ++i)
     {
         ItemAddedAtIndex(i);
     }
-    //END TEMP DATA
 }
 
 void EPGFilterListAdapter::Clear()
 {
-    if (m_listElements.size() > 0)
+    for (int32_t i = static_cast<int32_t>(m_filters.size()) - 1; i >= 0; --i)
     {
-        for (int32_t i = static_cast<int32_t>(m_listElements.size()) - 1; i >= 0; --i)
-        {
-            ItemRemovedAtIndex.Emit(i);
-        }
-
-        m_listElements.clear();
+        ItemRemovedAtIndex.Emit(i);
     }
+
+    m_selectedFilterIndex = 0;
 }
 
 void EPGFilterListAdapter::PopulateView(size_t index, CYISceneView *pView)
 {
-    const auto &item = m_listElements[index];
+    const auto &item = m_filters[index];
     
     auto pText = Utility::GetNode<CYITextSceneNode>(pView, "Text");
-    pText->SetText(item.Text);
+    pText->SetText(item.GetLabel());
     
     auto pActiveText = Utility::GetNode<CYITextSceneNode>(pView, "Text-Active");
-    pActiveText->SetText(item.Text);
+    pActiveText->SetText(item.GetLabel());
     
     auto pToggleButton = Utility::GetNode<CYIToggleButtonView>(pView);
     pToggleButton->SetButtonID(static_cast<int32_t>(index));
-    pToggleButton->SetToggled(item.ToggleState);
+    pToggleButton->SetToggled(item.IsEnabled());
+    pToggleButton->SetEnabled(!item.IsEnabled());
     pToggleButton->ButtonToggled.Connect(*this, &EPGFilterListAdapter::OnFilterButtonPressed);
 }
 
@@ -87,18 +83,21 @@ void EPGFilterListAdapter::OnFilterButtonPressed(bool state, int32_t id)
     
     m_selectedFilterIndex = id;
     
-    FilterEnabled.Emit(m_listElements[id].Text);
+    SetButtonStateForIndex(m_selectedFilterIndex, true);
+
+    FilterEnabled.Emit(m_filters[id]);
 }
 
 void EPGFilterListAdapter::SetButtonStateForIndex(int32_t index, bool state)
 {
-    m_listElements[index].ToggleState = state;
+    m_filters[index].SetIsEnabled(state);
     
     CYISceneNode *pView = m_pListView->GetStreamedNode(index);
     if (pView)
     {
         auto pToggleButton = Utility::GetNode<CYIToggleButtonView>(pView);
         pToggleButton->SetToggled(state);
+        pToggleButton->SetEnabled(!state);
     }
 }
 

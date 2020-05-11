@@ -141,19 +141,23 @@ void EPGChannelListAdapter::OnReleaseView(size_t index, CYISceneView *pView)
 
 void EPGChannelListAdapter::ConstructChannelList(std::shared_ptr<EPGModel> pModel)
 {
-    Clear();
-    
     m_pEPGModel = pModel;
-    std::vector<std::shared_ptr<EPGChannelModel>> channelData = pModel->GetChannelModels();
-    
-    for (const auto &channelModel : channelData)
+
+    ConstructChannelList(pModel->GetChannelModels());
+
+    m_pEPGModel->ChannelAddedAtIndex.Connect(*this, &EPGChannelListAdapter::OnModelAddedChannelAtIndex, EYIConnectionType::Sync);
+}
+
+void EPGChannelListAdapter::ConstructChannelList(const std::vector<std::shared_ptr<EPGChannelModel>> &models)
+{
+    Clear();
+
+    for (const auto &channelModel : models)
     {
         CYIString channelId = channelModel->GetChannelId();
         m_channelIDs.push_back(channelId);
         ItemAddedAtIndex(m_channelIDs.size() - 1);
     }
-
-    m_pEPGModel->ChannelAddedAtIndex.Connect(*this, &EPGChannelListAdapter::OnModelAddedChannelAtIndex, EYIConnectionType::Sync);
 }
 
 void EPGChannelListAdapter::Clear()
@@ -169,8 +173,6 @@ void EPGChannelListAdapter::Clear()
 
         m_channelIDs.clear();
     }
-
-    m_pEPGModel = nullptr;
 }
 
 void EPGChannelListAdapter::ShowDetailsItem(size_t index)

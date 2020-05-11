@@ -10,6 +10,7 @@
 class EPGAssetModel;
 class EPGChannelModel;
 class EPGChannelListAdapter;
+class EPGFilterModel;
 class EPGListView;
 class EPGModel;
 class EPGTimeListAdapter;
@@ -26,6 +27,7 @@ public:
     virtual ~EPGViewController();
   
     virtual void Init(CYISceneView *pView);
+    void SetFilters(std::vector<EPGFilterModel> &&filters);
     void Populate(std::shared_ptr<EPGModel> data);
     void Reset();
     void SetFocusedAssetIds(const CYIString &channelId, const CYIString &assetId);
@@ -46,6 +48,7 @@ private:
     void InitTimeList(CYISceneView *pView);
     void InitCurrentTimeMarker(CYISceneView *pView);
     void OnChannelListScrolled(float scrolledPosition);
+    void OnFilterEnabled(const EPGFilterModel &filter);
     void OnAssetGainedFocus(const std::shared_ptr<EPGAssetModel>& pAsset, const std::shared_ptr<EPGChannelModel> &pChannel);
     void OnAssetLostFocus(const std::shared_ptr<EPGAssetModel>& pAsset, const std::shared_ptr<EPGChannelModel> &pChannel);
 
@@ -57,10 +60,12 @@ private:
     EPGChannelListAdapter *m_pEPGListAdapter;
     EPGTimeListAdapter *m_pTimeListAdapter;
     EPGTimeMarkerView *m_pCurrentTimeMarker = nullptr;
-    EPGSideMenuViewController m_filterViewController;
+    EPGSideMenuViewController m_sideMenuViewController;
     CYIActivityIndicatorView *m_pActivityIndicatorView;
     
     CYITimer m_tickTimer;
+
+    std::shared_ptr<EPGModel> m_pModel;
 
     CYIString m_lastFocusedAssetId;
     CYIString m_lastFocusedChannelId;

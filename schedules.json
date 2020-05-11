@@ -4498,7 +4498,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "e331455c-dfa0-7d05-2b47-2d22768394b9",
@@ -6420,7 +6420,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "58a5f554-e5b7-49a2-1b98-e1dffd0f4604",
@@ -6887,7 +6887,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "61086ae5-48ce-8085-6d40-1da956771eba",
@@ -7575,7 +7575,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "a2ce2e53-bc11-775d-b070-e3c2d4a62d99",
@@ -10484,7 +10484,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "2c3c77b4-8941-7de6-291c-a33ad50f6504",
@@ -11248,7 +11248,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "74b13512-5e2c-8c70-15d0-d1c8b9fda9b2",
@@ -14919,7 +14919,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "5c55c82f-c5cb-2aa5-6376-cc868d5cdc32",
@@ -15214,7 +15214,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "11331f80-92d8-9750-4b91-def53850421e",
@@ -15886,7 +15886,7 @@
       "defaultImageUrl": "res://drawable/tv/youi_logo_red.png",
       "defaultDominantColor": {}
     },
-    "isFavorite": false
+    "isFavorite": true
   },
   {
     "channelId": "a56d1955-3f16-b9d1-a531-89755221ccf2",

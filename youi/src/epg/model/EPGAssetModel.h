@@ -24,11 +24,12 @@ public:
     bool IsLookback() const { return m_isLookback; }
     bool IsPlayable() const { return m_isPlayable; }
     bool IsDAI() const { return m_isDAI; }
-    
+
     int64_t GetDuration() const { return m_duration; }
     int64_t GetEpisodeNumber() const { return m_episodeNumber; }
     int64_t GetSeasonNumber() const { return m_seasonNumber; }
 
+    const std::vector<CYIString> &GetCategories() const { return m_categories; }
     const std::vector<CYIUrl> &GetImageUrls() const { return m_imageUrls; }
 
     const CYIString &GetProgramChannelId() const { return m_programChannelId; }
@@ -40,7 +41,9 @@ public:
 
     const CYIDateTime &GetStartTime() const { return m_startTime; }
     const CYIDateTime &GetEndTime() const { return m_endTime; }
-    
+
+    bool IsOnNow() const;
+
 private:
     bool m_isFastForwardDisabled;
     bool m_isRestartable;
@@ -54,7 +57,8 @@ private:
     int64_t m_episodeNumber;
     int64_t m_seasonNumber;
 
-    std::vector<CYIUrl> m_imageUrls{};
+    std::vector<CYIString> m_categories;
+    std::vector<CYIUrl> m_imageUrls;
     
     CYIString m_programChannelId;
     CYIString m_parentalRating;

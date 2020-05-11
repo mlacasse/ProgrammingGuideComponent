@@ -32,6 +32,7 @@ public:
 
     const std::vector<std::shared_ptr<EPGAssetModel>> &GetAssetModels() const { return m_assets; };
     const std::shared_ptr<EPGAssetModel> &GetModelAtIndex(size_t index) const { return m_assets[index]; }
+    const std::shared_ptr<EPGAssetModel> GetModelOnNow() const;
     size_t GetAssetCount() const { return m_assets.size(); }
 
 private:

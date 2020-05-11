@@ -6,6 +6,7 @@
 #include "epg/model/EPGModel.h"
 #include "epg/model/EPGAssetModel.h"
 #include "epg/model/EPGChannelModel.h"
+#include "epg/model/EPGFilterModel.h"
 #include "epg/view/EPGTimeMarkerView.h"
 #include "epg/utility/NodeUtilities.h"
 
@@ -56,8 +57,9 @@ void EPGViewController::Init(CYISceneView *pView)
     InitTimeList(m_pView);
     InitCurrentTimeMarker(m_pView);
     
-    m_filterViewController.Init(pView);
-    m_filterViewController.Populate();
+    m_sideMenuViewController.Init(pView);
+    m_sideMenuViewController.FilterEnabled.Connect(*this, &EPGViewController::OnFilterEnabled);
+ 
     
     m_tickTimer.SetSingleShot(false);
     m_tickTimer.SetInterval(TICK_UPDATE_INTERVAL_MS);
@@ -87,8 +89,15 @@ void EPGViewController::InitCurrentTimeMarker(CYISceneView *pView)
     m_pEPGListAdapter->SetCurrentTimeMarker(m_pCurrentTimeMarker);
 }
 
+void EPGViewController::SetFilters(std::vector<EPGFilterModel> &&filters)
+{
+    m_sideMenuViewController.SetFilters(std::move(filters));
+}
+
 void EPGViewController::Populate(std::shared_ptr<EPGModel> data)
 {
+    m_pModel = data;
+
     m_pEPGListAdapter->ConstructChannelList(data);
     m_pTimeListAdapter->BuildElements(data->GetStartTime(), data->GetEndTime());
 
@@ -124,6 +133,28 @@ void EPGViewController::RestoreFocus()
     {
         m_didRestoreFocus = m_pEPGListAdapter->RevealAsset(m_lastFocusedChannelId, m_lastFocusedAssetId);
     }
+}
+
+void EPGViewController::OnFilterEnabled(const EPGFilterModel &filter)
+{
+    if (filter.GetFilterType() == EPGFilterModel::FilterType::Favorite)
+    {
+        if (filter.GetValue() == "0")
+        {
+            m_pEPGListAdapter->ConstructChannelList(m_pModel->GetChannelModels());
+        }
+        else
+        {
+            m_pEPGListAdapter->ConstructChannelList(m_pModel->GetFavoriteChannelModels());
+        }
+    }
+    else if (filter.GetFilterType() == EPGFilterModel::FilterType::Category)
+    {
+        auto models = m_pModel->GetChannelModelsForCategory(filter.GetValue());
+        m_pEPGListAdapter->ConstructChannelList(models);
+    }
+
+    m_pEPGListView->RequestFocusOnItem(0);
 }
 
 void EPGViewController::OnAssetGainedFocus(const std::shared_ptr<EPGAssetModel>& pAsset, const std::shared_ptr<EPGChannelModel> &pChannel)

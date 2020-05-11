@@ -133,21 +133,21 @@ void ShadowProgrammingGuideView::Reset()
     m_controller.Populate(m_pModel);
 }
 
-void ShadowProgrammingGuideView::PrependChannels(std::vector<std::shared_ptr<EPGChannelModel>> channels)
+void ShadowProgrammingGuideView::PrependChannels(const std::vector<std::shared_ptr<EPGChannelModel>> &channels)
 {
     if (channels.size() > 0)
     {
-        m_pModel->PrependChannelModels(std::move(channels));
+        m_pModel->PrependChannelModels(channels);
         m_controller.HideActivityIndicator();
         m_controller.RestoreFocus();
     }
 }
 
-void ShadowProgrammingGuideView::AppendChannels(std::vector<std::shared_ptr<EPGChannelModel>> channels)
+void ShadowProgrammingGuideView::AppendChannels(const std::vector<std::shared_ptr<EPGChannelModel>> &channels)
 {
     if (channels.size() > 0)
     {
-        m_pModel->AppendChannelModels(std::move(channels));
+        m_pModel->AppendChannelModels(channels);
         m_controller.HideActivityIndicator();
         m_controller.RestoreFocus();
     }
@@ -157,6 +157,11 @@ void ShadowProgrammingGuideView::ResetChannelFocus()
 {
     m_controller.SetFocusedAssetIds(GetSavedProps()->currentChannelId, GetSavedProps()->currentAssetId);
     m_controller.SetFocus();
+}
+
+void ShadowProgrammingGuideView::SetFilters(std::vector<EPGFilterModel> &&filters)
+{
+    m_controller.SetFilters(std::move(filters));
 }
 
 void ShadowProgrammingGuideView::ApplyProps(folly::dynamic properties)
