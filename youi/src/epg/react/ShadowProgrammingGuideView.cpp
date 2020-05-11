@@ -174,22 +174,18 @@ void ShadowProgrammingGuideView::ApplyProps(folly::dynamic properties)
 glm::vec3 ShadowProgrammingGuideView::GetScaleFactor() const
 {
     glm::vec3 scale(1.f, 1.f, 1.f);
-    
+
     float scaleRatio = 1.f;
 
-#ifndef YI_OSX    
     CYISurface *pSurface = CYIAppContext::GetInstance()->GetSurface();
     if (pSurface)
     {
+#ifndef YI_OSX
         scaleRatio = pSurface->GetWidth() / 1920.f;
-    }
 #else
-    CYISurface *pSurface = CYIAppContext::GetInstance()->GetSurface();
-    if (pSurface)
-    {
         scaleRatio = AppFactory::GetWindowWidth() / static_cast<float>(pSurface->GetWidth());
-    }
 #endif
+    }
 
     scale.x = scaleRatio;
     scale.y = scaleRatio;
