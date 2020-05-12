@@ -184,6 +184,7 @@ glm::vec3 ShadowProgrammingGuideView::GetScaleFactor() const
         scaleRatio = pSurface->GetWidth() / 1920.f;
 #else
         scaleRatio = AppFactory::GetWindowWidth() / static_cast<float>(pSurface->GetWidth());
+        scaleRatio = scaleRatio / 1.60;
 #endif
     }
 

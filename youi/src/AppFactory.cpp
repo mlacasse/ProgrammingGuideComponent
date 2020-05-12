@@ -4,8 +4,16 @@
 
 #define APP_NAME "ProgrammingGuideComponent"
 
-#define APP_WIDTH (1920)
-#define APP_HEIGHT (1080)
+#if defined(YI_PS4) || defined(YI_XBOX_360) || defined(YI_PS3)
+#    define APP_WIDTH (1920)
+#    define APP_HEIGHT (1080)
+#elif defined(YI_OSX)
+#    define APP_WIDTH (1075)
+#    define APP_HEIGHT (605)
+#else
+#    define APP_WIDTH (1280)
+#    define APP_HEIGHT (720)
+#endif
 
 std::unique_ptr<CYIApp> AppFactory::Create()
 {
