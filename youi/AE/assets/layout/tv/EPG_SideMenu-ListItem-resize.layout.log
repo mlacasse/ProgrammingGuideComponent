@@ -41,7 +41,6 @@ activecomp {
       value: "fill-parent"
     }
   }
-  classname: "CYIToggleButtonView"
   bgcolor {
     alpha: 1
     red: 0.17254901960784313
@@ -51,14 +50,6 @@ activecomp {
   properties {
     key: "layout"
     value: "CYIStackLayout"
-  }
-  properties {
-    key: "componentSubtype"
-    value: "toggle"
-  }
-  properties {
-    key: "componentType"
-    value: "button"
   }
   childtemplates: "EPG_ListItem-Text-Scale"
 }

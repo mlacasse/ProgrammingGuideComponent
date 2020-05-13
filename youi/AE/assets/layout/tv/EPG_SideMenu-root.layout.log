@@ -37,6 +37,7 @@ activecomp {
     acceptslights: true
     castsshadows: false
   }
+  classname: "EPGSideMenuView"
   bgcolor {
     alpha: 1
     red: 0.17254901960784313
@@ -46,6 +47,10 @@ activecomp {
   properties {
     key: "scale-mode"
     value: "fit"
+  }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
   }
   childtemplates: "EPG_SideMenu-resize"
 }

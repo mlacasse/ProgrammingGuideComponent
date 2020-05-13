@@ -5,6 +5,4 @@
 YI_TYPE_DEF_INST(EPGSideMenuView, CYIListView)
 
 EPGSideMenuView::EPGSideMenuView()
-{
-}
-
+{}

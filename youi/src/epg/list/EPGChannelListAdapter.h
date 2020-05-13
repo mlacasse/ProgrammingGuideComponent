@@ -31,7 +31,6 @@ public:
     std::shared_ptr<CYIAssetViewTemplate> GetViewTemplate(size_t index) const override;
     size_t GetItemsCount() const override;
     
-    
     void SetCurrentTimeMarker(EPGTimeMarkerView *pTimeMarkerView) { m_pCurrentTimeMarker = pTimeMarkerView; };
     void ConstructChannelList(std::shared_ptr<EPGModel> pModel);
     void ConstructChannelList(const std::vector<std::shared_ptr<EPGChannelModel>> &models);

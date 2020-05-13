@@ -121,8 +121,6 @@ void EPGChannelListAdapter::PopulateView(size_t index, CYISceneView *pView)
 
 void EPGChannelListAdapter::OnReleaseView(size_t index, CYISceneView *pView)
 {
-    YI_UNUSED(pView);
-
     if (m_isDetailsItemVisible)
     {
         if (index > m_detailsItemIndex)
@@ -278,7 +276,7 @@ void EPGChannelListAdapter::OnModelAddedChannelAtIndex(size_t index)
 
 std::shared_ptr<EPGChannelModel> EPGChannelListAdapter::GetChannelData(size_t index)
 {
-    CYIString id = m_channelIDs[index];
+    const CYIString &id = m_channelIDs[index];
     
     return m_pEPGModel->GetChannelModel(id);
 }
@@ -363,11 +361,10 @@ void EPGChannelListAdapter::OnChannelButtonPressed(int32_t index)
 
 void EPGChannelListAdapter::OnChannelFavoriteButtonToggled(bool state, int32_t index)
 {
-    // Remove this one the issue with the time headers is resolved.
-    auto channel = GetChannelData(static_cast<size_t>(index));
-    channel->SetFavorite(state);
+    auto pChannel = GetChannelData(static_cast<size_t>(index));
+    pChannel->SetFavorite(state);
 
-    ChannelFavoriteButtonToggled.Emit(GetChannelData(static_cast<size_t>(index)), state);
+    ChannelFavoriteButtonToggled.Emit(pChannel, state);
 }
 
 #undef CHANNEL_LANE_TEMPLATE_NAME

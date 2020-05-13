@@ -32,7 +32,6 @@ public:
     CYISignal<const std::shared_ptr<EPGChannelModel>& /*pModel*/> ChannelFocusLost;
 
 protected:
-
     void OnFocusGainedInDescendants() override;
     void OnFocusLostInDescendants() override;
 

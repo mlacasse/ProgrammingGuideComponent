@@ -125,277 +125,6 @@ tracks {
 tracks {
   binding: IS_VISIBLE
   targetid: 2381
-  targetname: "Main-ChannelListings"
-  keytimes {
-    datatype: AE_INT_DATA
-    timeOffset: 0
-    inttype: AE_INTERP_HOLD
-    ivalue1: 1
-  }
-}
-tracks {
-  binding: OPACITY
-  targetid: 2381
-  targetname: "Main-ChannelListings"
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.5
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.51666
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.0025185219
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.5333204
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.010845978
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.5499806
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.026480606
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.5666409
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.051582877
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.5833011
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.089397185
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.5999613
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.144985
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.6166215
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.22628586
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.6332817
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.34374127
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.6666021
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.65235406
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.6832623
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.77094877
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.6999226
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.85312235
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.7165828
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.90930974
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.733243
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.94754463
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.7499032
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.97295409
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.7665634
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.98882192
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.7832236
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.99733233
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 4.8
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 1
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 1
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.01666
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.99748147
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.0333204
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.98915404
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.0499806
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.97351938
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.0666409
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.94841713
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.0833011
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.91060281
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.0999613
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.85501504
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.1166215
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.77371413
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.1332817
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.65625876
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.1666021
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.34764591
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.1832623
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.22905119
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.1999226
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.14687765
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.2165828
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.09069024
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.233243
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.052455407
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.2499032
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.02704592
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.2665634
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.011178059
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.2832236
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0.0026677006
-    isCookedKeytime: true
-  }
-  keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 5.3
-    inttype: AE_INTERP_LINEAR
-    fvalue1: 0
-  }
-  trackName: "Opacity"
-}
-tracks {
-  binding: IS_VISIBLE
-  targetid: 2382
   targetname: "Main-OnNowListings"
   keytimes {
     datatype: AE_INT_DATA
@@ -406,7 +135,7 @@ tracks {
 }
 tracks {
   binding: POSITION
-  targetid: 2382
+  targetid: 2381
   targetname: "Main-OnNowListings"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
@@ -461,7 +190,7 @@ tracks {
 }
 tracks {
   binding: OPACITY
-  targetid: 2382
+  targetid: 2381
   targetname: "Main-OnNowListings"
   keytimes {
     datatype: AE_FLOAT_DATA
@@ -497,7 +226,7 @@ tracks {
 }
 tracks {
   binding: IS_VISIBLE
-  targetid: 2383
+  targetid: 2382
   targetname: "SideMenu-Button"
   keytimes {
     datatype: AE_INT_DATA
@@ -508,7 +237,7 @@ tracks {
 }
 tracks {
   binding: OPACITY
-  targetid: 2383
+  targetid: 2382
   targetname: "SideMenu-Button"
   keytimes {
     datatype: AE_FLOAT_DATA
@@ -544,7 +273,7 @@ tracks {
 }
 tracks {
   binding: IS_VISIBLE
-  targetid: 2384
+  targetid: 2383
   targetname: "SideMenu-root"
   keytimes {
     datatype: AE_INT_DATA
@@ -555,7 +284,7 @@ tracks {
 }
 tracks {
   binding: POSITION
-  targetid: 2384
+  targetid: 2383
   targetname: "SideMenu-root"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
@@ -610,7 +339,7 @@ tracks {
 }
 tracks {
   binding: OPACITY
-  targetid: 2384
+  targetid: 2383
   targetname: "SideMenu-root"
   keytimes {
     datatype: AE_FLOAT_DATA
@@ -653,19 +382,19 @@ markers {
     binding: POSITION
   }
   tracksSelection {
+    targetid: 2381
+    binding: POSITION
+  }
+  tracksSelection {
     targetid: 2382
+    binding: OPACITY
+  }
+  tracksSelection {
+    targetid: 2383
     binding: POSITION
   }
   tracksSelection {
     targetid: 2383
-    binding: OPACITY
-  }
-  tracksSelection {
-    targetid: 2384
-    binding: POSITION
-  }
-  tracksSelection {
-    targetid: 2384
     binding: OPACITY
   }
   alltracks: false
@@ -680,19 +409,19 @@ markers {
     binding: POSITION
   }
   tracksSelection {
+    targetid: 2381
+    binding: POSITION
+  }
+  tracksSelection {
     targetid: 2382
+    binding: OPACITY
+  }
+  tracksSelection {
+    targetid: 2383
     binding: POSITION
   }
   tracksSelection {
     targetid: 2383
-    binding: OPACITY
-  }
-  tracksSelection {
-    targetid: 2384
-    binding: POSITION
-  }
-  tracksSelection {
-    targetid: 2384
     binding: OPACITY
   }
   alltracks: false
@@ -707,7 +436,7 @@ markers {
     binding: OPACITY
   }
   tracksSelection {
-    targetid: 2382
+    targetid: 2381
     binding: OPACITY
   }
   alltracks: false
@@ -722,7 +451,7 @@ markers {
     binding: OPACITY
   }
   tracksSelection {
-    targetid: 2382
+    targetid: 2381
     binding: OPACITY
   }
   alltracks: false
@@ -732,10 +461,6 @@ markers {
   starttime: 4.5
   duration: 0.3
   name: "ShowChannelListings"
-  tracksSelection {
-    targetid: 2381
-    binding: OPACITY
-  }
   alltracks: false
   looping: false
 }
@@ -743,10 +468,6 @@ markers {
   starttime: 5
   duration: 0.3
   name: "HideChannelListings"
-  tracksSelection {
-    targetid: 2381
-    binding: OPACITY
-  }
   alltracks: false
   looping: false
 }

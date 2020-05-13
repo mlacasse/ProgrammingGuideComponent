@@ -55,6 +55,18 @@ tracks {
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
+  keytimes {
+    datatype: AE_FLOAT_DATA
+    timeOffset: 4
+    inttype: AE_INTERP_LINEAR
+    fvalue1: 1
+  }
+  keytimes {
+    datatype: AE_FLOAT_DATA
+    timeOffset: 4.2
+    inttype: AE_INTERP_LINEAR
+    fvalue1: 1
+  }
   trackName: "Opacity"
 }
 markers {
@@ -99,6 +111,22 @@ markers {
   }
   alltracks: false
   id: 22
+  looping: false
+  properties {
+    key: "recursive"
+    value: "true"
+  }
+}
+markers {
+  starttime: 4
+  duration: 0.2
+  name: "Disable"
+  tracksSelection {
+    targetid: 2546
+    binding: OPACITY
+  }
+  alltracks: false
+  id: 17
   looping: false
   properties {
     key: "recursive"

@@ -3,13 +3,11 @@
 #include "epg/list/EPGChannelListView.h"
 #include "epg/model/EPGAssetModel.h"
 #include "epg/model/EPGChannelModel.h"
-#include "epg/utility/NodeUtilities.h"
 #include "epg/view/EPGAssetView.h"
 
 #include <asset/YiAssetViewTemplate.h>
 #include <layout/YiLinearLayout.h>
 #include <utility/YiDateTime.h>
-#include <view/YiPushButtonView.h>
 
 #include <glm/glm.hpp>
 

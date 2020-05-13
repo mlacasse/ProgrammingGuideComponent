@@ -2,7 +2,6 @@
 #define _EPG_ASSET_LIST_ADAPTER_H_
 
 #include <import/YiViewTemplate.h>
-#include <scenetree/YiTextSceneNode.h>
 #include <signal/YiSignal.h>
 #include <streamer/YiViewAdapter.h>
 #include <view/YiListView.h>
@@ -12,8 +11,6 @@ class EPGChannelListView;
 class EPGChannelModel;
 class EPGAssetView;
 
-class CYIBundle;
-class CYIButton;
 class CYIDateTime;
 
 struct EPGAssetListElement

@@ -15,10 +15,8 @@ EPGSideMenuViewController::EPGSideMenuViewController()
 
 void EPGSideMenuViewController::Init(CYISceneView *pView)
 {
-    CYIAbstractTimeline *pShowTimeline = pView->GetTimeline("ShowSideMenu");
-    CYIAbstractTimeline *pHideTimeline = pView->GetTimeline("HideSideMenu");
-    m_showHideToggleController.SetTimelines(pShowTimeline, pHideTimeline);
-    
+    m_showHideToggleController.SetTimelines(pView->GetTimeline("ShowSideMenu"));
+
     m_pView = Utility::GetNode<CYISceneView>(pView, "SideMenu");
     
     auto pMenuHeader = Utility::GetNode<CYISceneNode>(m_pView, "SideMenu-SectionHeader");
@@ -40,10 +38,14 @@ void EPGSideMenuViewController::Init(CYISceneView *pView)
     m_pView->DescendantLostFocus.Connect(*this, &EPGSideMenuViewController::OnDescendantLostFocus);
 
     auto pSortButton = Utility::GetNode<CYIToggleButtonView>(m_pView, "SideMenu-SortButton");
-    pSortButton->SetText("All");
+    pSortButton->SetText("ABC");
 
     auto pDateSelectorButton = Utility::GetNode<CYIToggleButtonView>(m_pView, "SideMenu-JumpButton");
     pDateSelectorButton->SetText("Jump To Day");
+
+    // TODO: Implement
+    pSortButton->Hide();
+    pDateSelectorButton->Hide();
 }
 
 void EPGSideMenuViewController::SetFilters(std::vector<EPGFilterModel> &&filters)
@@ -65,6 +67,11 @@ void EPGSideMenuViewController::OnDaySelectorButtonPressed()
 
 void EPGSideMenuViewController::OnDescendantGainedFocus()
 {
+    if (!m_pFilterListView->RequestFocusOnItem(0))
+    {
+        m_pFilterListView->RequestFocusOnItem(1);
+    }
+
     m_showHideToggleController.ToggleOn();
 }
 

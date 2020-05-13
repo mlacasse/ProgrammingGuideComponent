@@ -6,13 +6,6 @@
 #include <utility/InitFromValue.h>
 #include <utility/YiString.h>
 
-// Covers all platforms
-#if !(defined YI_DEBUG)
-#if defined (DEBUG) || defined (_DEBUG) || !(defined (NDEBUG) || defined (_NDEBUG))
-#define YI_DEBUG 1
-#endif
-#endif
-
 EPGAssetModel::EPGAssetModel()
 {}
 
@@ -85,5 +78,5 @@ bool EPGAssetModel::IsOnNow() const
     now.SetMinute(CYIDateTime::GetCurrentDateTime().GetMinute());
 #endif
 
-    return m_startTime >= now && now <= m_endTime;
+    return m_startTime <= now && m_endTime >= now;
 }

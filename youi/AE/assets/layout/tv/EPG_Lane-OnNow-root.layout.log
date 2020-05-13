@@ -1,15 +1,15 @@
 activecomp {
   name: "EPG_Lane-OnNow-root"
-  width: 1701
+  width: 1750
   height: 362
-  defaultcameradistance: 2362.5
+  defaultcameradistance: 2430.5557
   layer {
     name: "Lane-OnNow"
     id: 3347
     sourceid: 3290
     transform {
       anchorPoint {
-        x: 850.5
+        x: 875
         y: 181
         z: 0
       }
@@ -19,7 +19,7 @@ activecomp {
         z: 1
       }
       position {
-        x: 850.5
+        x: 875
         y: 181
         z: 0
       }
@@ -37,6 +37,7 @@ activecomp {
     acceptslights: true
     castsshadows: false
   }
+  classname: "EPGOnNowView"
   bgcolor {
     alpha: 1
     red: 0.17254901960784313
@@ -59,13 +60,17 @@ activecomp {
     key: "clip"
     value: "false"
   }
+  properties {
+    key: "usesCustomClass"
+    value: "true"
+  }
   childtemplates: "EPG_Lane-OnNow"
 }
 sources {
   uid: 3290
   srctype: AE_COMP_SRC
   name: "EPG_Lane-OnNow.layout"
-  width: 1701
+  width: 1750
   height: 362
   copy_source: true
 }

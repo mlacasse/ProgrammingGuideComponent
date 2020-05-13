@@ -1,8 +1,8 @@
 activecomp {
   name: "EPG_Lane-OnNow"
-  width: 1701
+  width: 1750
   height: 362
-  defaultcameradistance: 2362.5
+  defaultcameradistance: 2430.5557
   layer {
     name: "Scaler"
     id: 3290

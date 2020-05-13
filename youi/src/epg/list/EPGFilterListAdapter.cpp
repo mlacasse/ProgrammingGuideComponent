@@ -38,7 +38,12 @@ void EPGFilterListAdapter::SetFilters(std::vector<EPGFilterModel> &&filters)
     {
         m_selectedFilterIndex = static_cast<int32_t>(std::distance(m_filters.begin(), itr));
     }
-    
+    else
+    {
+        m_selectedFilterIndex = 0;
+        m_filters[0].SetIsEnabled(true);
+    }
+
     for (size_t i = 0; i < m_filters.size(); ++i)
     {
         ItemAddedAtIndex(i);
@@ -74,11 +79,6 @@ void EPGFilterListAdapter::PopulateView(size_t index, CYISceneView *pView)
 
 void EPGFilterListAdapter::OnFilterButtonPressed(bool state, int32_t id)
 {
-    if (id == m_selectedFilterIndex)
-    {
-        return;
-    }
-    
     SetButtonStateForIndex(m_selectedFilterIndex, false);
     
     m_selectedFilterIndex = id;
@@ -96,8 +96,8 @@ void EPGFilterListAdapter::SetButtonStateForIndex(int32_t index, bool state)
     if (pView)
     {
         auto pToggleButton = Utility::GetNode<CYIToggleButtonView>(pView);
-        pToggleButton->SetToggled(state);
         pToggleButton->SetEnabled(!state);
+        pToggleButton->SetToggled(state);
     }
 }
 

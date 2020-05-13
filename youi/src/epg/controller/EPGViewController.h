@@ -1,6 +1,7 @@
 #ifndef _EPG_VIEW_CONTROLLER_H_
 #define _EPG_VIEW_CONTROLLER_H_
 
+#include "epg/controller/EPGOnNowViewController.h"
 #include "epg/controller/EPGSideMenuViewController.h"
 
 #include <signal/YiSignal.h>
@@ -55,12 +56,14 @@ private:
     void OnTick();
     
     CYISceneView *m_pView = nullptr;
+    CYISceneView *m_pEPGView = nullptr;
     EPGListView *m_pEPGListView = nullptr;
     CYIListView *m_pTimeListView = nullptr;
     EPGChannelListAdapter *m_pEPGListAdapter;
     EPGTimeListAdapter *m_pTimeListAdapter;
     EPGTimeMarkerView *m_pCurrentTimeMarker = nullptr;
     EPGSideMenuViewController m_sideMenuViewController;
+    EPGOnNowViewController m_onNowViewController;
     CYIActivityIndicatorView *m_pActivityIndicatorView;
     
     CYITimer m_tickTimer;

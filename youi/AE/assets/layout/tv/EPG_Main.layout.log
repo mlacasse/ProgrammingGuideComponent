@@ -106,42 +106,8 @@ activecomp {
     castsshadows: false
   }
   layer {
-    name: "Main-ChannelListings"
-    id: 2381
-    sourceid: 3164
-    transform {
-      anchorPoint {
-        x: 960
-        y: 540
-        z: 0
-      }
-      scale {
-        x: 1
-        y: 1
-        z: 1
-      }
-      position {
-        x: 960
-        y: 540
-        z: 0
-      }
-      orientation {
-        x: 0
-        y: 0
-        z: 0
-      }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
-    }
-    acceptsshadows: true
-    acceptslights: true
-    castsshadows: false
-  }
-  layer {
     name: "Main-OnNowListings"
-    id: 2382
+    id: 2381
     sourceid: 3264
     transform {
       anchorPoint {
@@ -175,7 +141,7 @@ activecomp {
   }
   layer {
     name: "SideMenu-Button"
-    id: 2383
+    id: 2382
     sourceid: 2456
     transform {
       anchorPoint {
@@ -209,7 +175,7 @@ activecomp {
   }
   layer {
     name: "SideMenu-root"
-    id: 2384
+    id: 2383
     sourceid: 2570
     transform {
       anchorPoint {
@@ -253,7 +219,6 @@ activecomp {
   }
   childtemplates: "EPG_Main-Epg"
   childtemplates: "EPG_Main-Epg-Placeholder"
-  childtemplates: "EPG_Main-ChannelListings"
   childtemplates: "EPG_Main-OnNowListings"
   childtemplates: "EPG_SideMenu-Button"
   childtemplates: "EPG_SideMenu-root"
@@ -283,14 +248,6 @@ sources {
   uid: 2410
   srctype: AE_COMP_SRC
   name: "EPG_Main-Epg-Placeholder.layout"
-  width: 1920
-  height: 1080
-  copy_source: true
-}
-sources {
-  uid: 3164
-  srctype: AE_COMP_SRC
-  name: "EPG_Main-ChannelListings.layout"
   width: 1920
   height: 1080
   copy_source: true

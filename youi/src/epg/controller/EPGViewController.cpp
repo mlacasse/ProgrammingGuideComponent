@@ -40,7 +40,9 @@ void EPGViewController::Init(CYISceneView *pView)
     m_pActivityIndicatorView = Utility::GetNode<CYIActivityIndicatorView>(pView);
     m_pActivityIndicatorView->SetStartDelay(ACTIVITY_INDICATOR_DELAY_MS);
 
-    m_pEPGListView = Utility::GetNode<EPGListView>(pView);
+    m_pEPGView = Utility::GetNode<CYISceneView>(pView, "Main-Epg");
+
+    m_pEPGListView = Utility::GetNode<EPGListView>(m_pEPGView);
     auto pChannelListAdapter = std::make_unique<EPGChannelListAdapter>(m_pEPGListView);
     m_pEPGListAdapter = pChannelListAdapter.get();
     
@@ -60,6 +62,10 @@ void EPGViewController::Init(CYISceneView *pView)
     m_sideMenuViewController.Init(pView);
     m_sideMenuViewController.FilterEnabled.Connect(*this, &EPGViewController::OnFilterEnabled);
  
+    m_onNowViewController.Init(pView);
+    m_onNowViewController.AssetSelected.Connect(AssetSelected, &CYISignal<const std::shared_ptr<EPGAssetModel> &, const std::shared_ptr<EPGChannelModel> & >::Emit);
+    m_onNowViewController.ChannelButtonPressed.Connect(ChannelButtonPressed, &CYISignal<const std::shared_ptr<EPGChannelModel> &>::Emit);
+    m_onNowViewController.ChannelFavoriteButtonToggled.Connect(ChannelFavoriteButtonToggled, &CYISignal<const std::shared_ptr<EPGChannelModel> &, bool>::Emit);
     
     m_tickTimer.SetSingleShot(false);
     m_tickTimer.SetInterval(TICK_UPDATE_INTERVAL_MS);
@@ -139,6 +145,9 @@ void EPGViewController::OnFilterEnabled(const EPGFilterModel &filter)
 {
     if (filter.GetFilterType() == EPGFilterModel::FilterType::Favorite)
     {
+        m_pEPGView->Show();
+        m_onNowViewController.SetVisibility(false);
+
         if (filter.GetValue() == "0")
         {
             m_pEPGListAdapter->ConstructChannelList(m_pModel->GetChannelModels());
@@ -151,7 +160,9 @@ void EPGViewController::OnFilterEnabled(const EPGFilterModel &filter)
     else if (filter.GetFilterType() == EPGFilterModel::FilterType::Category)
     {
         auto models = m_pModel->GetChannelModelsForCategory(filter.GetValue());
-        m_pEPGListAdapter->ConstructChannelList(models);
+        m_onNowViewController.Populate(filter.GetLabel(), models);
+        m_pEPGView->Hide();
+        m_onNowViewController.SetVisibility(true);
     }
 
     m_pEPGListView->RequestFocusOnItem(0);

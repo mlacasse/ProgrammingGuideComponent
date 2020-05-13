@@ -9,3 +9,43 @@ tracks {
     ivalue1: 1
   }
 }
+tracks {
+  binding: OPACITY
+  targetid: 2299
+  targetname: "ListItem-Text"
+  keytimes {
+    datatype: AE_FLOAT_DATA
+    timeOffset: 0
+    inttype: AE_INTERP_LINEAR
+    fvalue1: 1
+  }
+  keytimes {
+    datatype: AE_FLOAT_DATA
+    timeOffset: 4
+    inttype: AE_INTERP_LINEAR
+    fvalue1: 1
+  }
+  keytimes {
+    datatype: AE_FLOAT_DATA
+    timeOffset: 4.2
+    inttype: AE_INTERP_LINEAR
+    fvalue1: 1
+  }
+  trackName: "Opacity"
+}
+markers {
+  starttime: 4
+  duration: 0.2
+  name: "Disable"
+  tracksSelection {
+    targetid: 2299
+    binding: OPACITY
+  }
+  alltracks: false
+  id: 17
+  looping: false
+  properties {
+    key: "recursive"
+    value: "true"
+  }
+}
